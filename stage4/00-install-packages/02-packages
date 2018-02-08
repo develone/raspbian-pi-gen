@@ -6,3 +6,10 @@ libatk1.0-dev
 libghc-x11-dev
 binutils-arm-none-eabi
 gcc-arm-none-eabi
+diffuse
+gitk
+tcl-dev
+telnet
+tftp
+hexedit
+

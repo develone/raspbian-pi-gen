@@ -49,6 +49,7 @@ ii  coinor-libcgl1                               0.58.9-1+b1                    
 ii  coinor-libclp1                               1.15.10-3                            armhf        Coin-or linear programming solver (shared libraries)
 ii  coinor-libcoinmp1v5:armhf                    1.7.6+dfsg1-2                        armhf        Simple C API for COIN-OR Solvers Clp and Cbc -- library
 ii  coinor-libcoinutils3v5                       2.9.15-4                             armhf        Coin-or collection of utility classes (binaries and libraries)
+ii  coinor-libipopt1v5                           3.11.9-2.1                           armhf        Interior-Point Optimizer, for large-scale nonlinear optimization
 ii  coinor-libosi1v5                             0.106.9-2                            armhf        COIN-OR Open Solver Interface
 ii  console-setup                                1.164                                all          console font and keymap setup program
 ii  console-setup-linux                          1.164                                all          Linux specific part of console-setup
@@ -84,6 +85,7 @@ ii  dh-python                                    2.20170125                     
 ii  dh-strip-nondeterminism                      0.034-1                              all          file non-deterministic information stripper — Debhelper add-on
 ii  dhcpcd5                                      1:6.11.5-1+rpt4                      armhf        DHCPv4, IPv6RA and DHCPv6 client with IPv4LL support
 ii  dictionaries-common                          1.27.2                               all          spelling dictionaries - common utilities
+ii  diffuse                                      0.4.8-2                              all          graphical tool for merging and comparing text files
 ii  diffutils                                    1:3.5-3                              armhf        File comparison utilities
 ii  dillo                                        3.0.5-3                              armhf        Small and fast web browser
 ii  distro-info-data                             0.36                                 all          information about the distributions' releases (data files)
@@ -108,11 +110,11 @@ ii  fakeroot                                     1.21-3.1                       
 ii  fbset                                        2.1-29                               armhf        framebuffer device maintenance program
 ii  file                                         1:5.30-1+deb9u1                      armhf        Recognize the type of data in a file using "magic" numbers
 ii  findutils                                    4.6.0+git+20161106-2                 armhf        utilities for finding files--find, xargs
-ii  firmware-atheros                             1:20161130-3+rpi2                    all          Binary firmware for Atheros wireless cards
-ii  firmware-brcm80211                           1:20161130-3+rpi2                    all          Binary firmware for Broadcom 802.11 wireless cards
-ii  firmware-libertas                            1:20161130-3+rpi2                    all          Binary firmware for Marvell wireless cards
-ii  firmware-misc-nonfree                        1:20161130-3+rpi2                    all          Binary firmware for various drivers in the Linux kernel
-ii  firmware-realtek                             1:20161130-3+rpi2                    all          Binary firmware for Realtek wired/wifi/BT adapters
+ii  firmware-atheros                             1:20161130-3+rpt1                    all          Binary firmware for Atheros wireless cards
+ii  firmware-brcm80211                           1:20161130-3+rpt1                    all          Binary firmware for Broadcom 802.11 wireless cards
+ii  firmware-libertas                            1:20161130-3+rpt1                    all          Binary firmware for Marvell wireless cards
+ii  firmware-misc-nonfree                        1:20161130-3+rpt1                    all          Binary firmware for various drivers in the Linux kernel
+ii  firmware-realtek                             1:20161130-3+rpt1                    all          Binary firmware for Realtek wired/wifi/BT adapters
 ii  fontconfig                                   2.11.0-6.7                           armhf        generic font configuration library - support binaries
 ii  fontconfig-config                            2.11.0-6.7                           all          generic font configuration library - configuration
 ii  fontconfig-infinality                        20130104-0ubuntu0ppa1+rpi1           all          Packages up http://www.infinality.net/fedora/linux/zips/fontconfig-infinality-1-20130104_1.tar.bz2
@@ -161,6 +163,7 @@ ii  gir1.2-gtk-3.0:armhf                         3.22.11-1+rpi3                 
 ii  gir1.2-pango-1.0:armhf                       1.40.5-1                             armhf        Layout and rendering of internationalized text - gir bindings
 ii  git                                          1:2.11.0-3+deb9u2                    armhf        fast, scalable, distributed revision control system
 ii  git-man                                      1:2.11.0-3+deb9u2                    all          fast, scalable, distributed revision control system (manual pages)
+ii  gitk                                         1:2.11.0-3+deb9u2                    all          fast, scalable, distributed revision control system (revision tree visualizer)
 ii  gksu                                         2.0.2-9                              armhf        graphical front-end to su and sudo
 ii  gldriver-test                                0.1                                  armhf        Enable/disable fbturbo when OpenGL driver is used
 ii  glib-networking:armhf                        2.50.0-1                             armhf        network-related giomodules for GLib
@@ -204,6 +207,7 @@ ii  gvfs-fuse                                    1.30.4-1                       
 ii  gvfs-libs:armhf                              1.30.4-1                             armhf        userspace virtual filesystem - private libraries
 ii  gzip                                         1.6-5                                armhf        GNU compression utilities
 ii  hardlink                                     0.3.0                                armhf        Hardlinks multiple copies of the same file
+ii  hexedit                                      1.3-1                                armhf        view and edit files or devices in hexadecimal or ASCII
 ii  hicolor-icon-theme                           0.15-1                               all          default fallback theme for FreeDesktop.org icon themes
 ii  hostname                                     3.18                                 armhf        utility to set/show the host name or domain name
 ii  htop                                         2.0.2-1                              armhf        interactive processes viewer
@@ -383,6 +387,7 @@ ii  libetpan17:armhf                             1.6-3                          
 ii  libevdev2:armhf                              1.5.6+dfsg-1                         armhf        wrapper library for evdev devices
 ii  libevent-2.0-5:armhf                         2.0.21-stable-3                      armhf        Asynchronous event notification library
 ii  libexif12:armhf                              0.6.21-2                             armhf        library to parse EXIF files
+ii  libexiv2-14:armhf                            0.25-3.1                             armhf        EXIF/IPTC/XMP metadata manipulation library
 ii  libexpat1:armhf                              2.2.0-2+deb9u1                       armhf        XML parsing C library - runtime library
 ii  libexpat1-dev:armhf                          2.2.0-2+deb9u1                       armhf        XML parsing C library - development kit
 ii  libexttextcat-2.0-0:armhf                    3.4.4-2                              armhf        Language detection library
@@ -456,6 +461,7 @@ ii  libglib2.0-dev                               2.50.3-2                       
 ii  libgltf-0.0-0v5:armhf                        0.0.2-5                              armhf        Library for rendering glTF models
 ii  libglu1-mesa:armhf                           9.0.0-2.1                            armhf        Mesa OpenGL utility library (GLU)
 ii  libgme0:armhf                                0.6.0-4                              armhf        Playback library for video game music files - shared library
+ii  libgmime-2.6-0:armhf                         2.6.22+dfsg2-1                       armhf        MIME message parser and creator library
 ii  libgmp-dev:armhf                             2:6.1.2+dfsg-1                       armhf        Multiprecision arithmetic library developers tools
 ii  libgmp10:armhf                               2:6.1.2+dfsg-1                       armhf        Multiprecision arithmetic library
 ii  libgmpxx4ldbl:armhf                          2:6.1.2+dfsg-1                       armhf        Multiprecision arithmetic library (C++ bindings)
@@ -468,6 +474,7 @@ ii  libgoa-1.0-0b:armhf                          3.22.5-1                       
 ii  libgoa-1.0-common                            3.22.5-1                             all          library for GNOME Online Accounts - common files
 ii  libgomp1:armhf                               6.3.0-18+rpi1                        armhf        GCC OpenMP (GOMP) support library
 ii  libgpg-error0:armhf                          1.26-2                               armhf        library for common error values and messages in GnuPG components
+ii  libgpgme11:armhf                             1.8.0-3                              armhf        GPGME - GnuPG Made Easy (library)
 ii  libgphoto2-6:armhf                           2.5.12-1                             armhf        gphoto2 digital camera library
 ii  libgphoto2-port12:armhf                      2.5.12-1                             armhf        gphoto2 digital camera port library
 ii  libgpm2:armhf                                1.20.4-6.2                           armhf        General Purpose Mouse - shared library
@@ -591,6 +598,7 @@ ii  libmtdev1:armhf                              1.1.5-1                        
 ii  libmtp-common                                1.1.13-1                             all          Media Transfer Protocol (MTP) common files
 ii  libmtp-runtime                               1.1.13-1                             armhf        Media Transfer Protocol (MTP) runtime tools
 ii  libmtp9:armhf                                1.1.13-1                             armhf        Media Transfer Protocol (MTP) library
+ii  libmumps-seq-4.10.0                          4.10.0.dfsg-4+b1                     armhf        Direct linear systems solver - non-parallel shared libraries
 ii  libmwaw-0.3-3:armhf                          0.3.9-2                              armhf        import library for some old Mac text documents
 ii  libmythes-1.2-0:armhf                        2:1.2.4-3                            armhf        simple thesaurus library
 ii  libncurses5:armhf                            6.0+20161126-1+deb9u1                armhf        shared libraries for terminal handling
@@ -679,6 +687,7 @@ ii  libpolkit-backend-1-0:armhf                  0.105-18                       
 ii  libpolkit-gobject-1-0:armhf                  0.105-18                             armhf        PolicyKit Authorization API
 ii  libpoppler64:armhf                           0.48.0-2+deb9u2                      armhf        PDF rendering library
 ii  libpopt0:armhf                               1.16-10                              armhf        lib for parsing cmdline parameters
+ii  libportaudio2:armhf                          19.6.0-1                             armhf        Portable audio I/O - shared library
 ii  libportmidi0:armhf                           1:217-6                              armhf        library for real-time MIDI input/output
 ii  libpostproc54:armhf                          7:3.2.10-1~deb9u1+rpt1               armhf        FFmpeg library for post processing - runtime files
 ii  libprocps6:armhf                             2:3.3.12-3                           armhf        library for accessing process information from /proc
@@ -720,6 +729,7 @@ ii  libraspberrypi-doc                           1.20171029-1                   
 ii  libraspberrypi0                              1.20171029-1                         armhf        EGL/GLES/OpenVG/etc. libraries for the Raspberry Pi's VideoCore IV
 ii  librasqal3:armhf                             0.9.32-1                             armhf        Rasqal RDF query library
 ii  libraw1394-11:armhf                          2.1.2-1                              armhf        library for direct access to IEEE 1394 bus (aka FireWire)
+ii  libraw15:armhf                               0.17.2-6+deb9u1                      armhf        raw image decoder library
 ii  librdf0:armhf                                1.0.17-1.1                           armhf        Redland Resource Description Framework (RDF) library
 ii  libreadline6:armhf                           6.3-9                                armhf        GNU readline and history libraries, run-time libraries
 ii  libreadline7:armhf                           7.0-3                                armhf        GNU readline and history libraries, run-time libraries
@@ -1287,7 +1297,7 @@ ii  rpcbind                                      0.2.3-0.6                      
 ii  rpd-icons                                    0.13                                 all          Icons for Raspberry Pi Desktop
 ii  rpd-plym-splash                              0.14                                 armhf        Raspberry Pi Desktop splashscreen
 ii  rpd-wallpaper                                0.4                                  all          Wallpaper for Raspberry Pi Desktop
-ii  rpi-chromium-mods                            20180112                             armhf        Raspberry Pi-specific mods to Chromium
+ii  rpi-chromium-mods                            20180207                             armhf        Raspberry Pi-specific mods to Chromium
 ii  rpi-update                                   20140705                             all          Raspberry Pi firmware updating tool
 ii  rsync                                        3.1.2-1+deb9u1                       armhf        fast, versatile, remote (and local) file-copying tool
 ii  rsyslog                                      8.24.0-1                             armhf        reliable system and kernel logging daemon
@@ -1324,8 +1334,16 @@ ii  sysvinit-utils                               2.88dsf-59.9                   
 ii  tar                                          1.29b-1.1                            armhf        GNU version of the tar archiving utility
 ii  tasksel                                      3.39                                 all          tool for selecting tasks for installation on Debian systems
 ii  tasksel-data                                 3.39                                 all          official tasks used for installation of Debian systems
+ii  tcl                                          8.6.0+9                              armhf        Tool Command Language (default version) - shell
+ii  tcl-dev:armhf                                8.6.0+9                              armhf        Tool Command Language (default version) - development files
+ii  tcl8.6                                       8.6.6+dfsg-1                         armhf        Tcl (the Tool Command Language) v8.6 - shell
+ii  tcl8.6-dev:armhf                             8.6.6+dfsg-1                         armhf        Tcl (the Tool Command Language) v8.6 - development files
 ii  tcpd                                         7.6.q-26                             armhf        Wietse Venema's TCP wrapper utilities
+ii  telnet                                       0.17-41                              armhf        basic telnet client
+ii  tftp                                         0.17-18                              armhf        Trivial file transfer protocol client
 ii  timidity                                     2.13.2-40.5                          armhf        Software sound renderer (MIDI sequencer, MOD player)
+ii  tk                                           8.6.0+9                              armhf        Toolkit for Tcl and X11 (default version) - windowing shell
+ii  tk8.6                                        8.6.6-1                              armhf        Tk toolkit for Tcl and X11 v8.6 - windowing shell
 ii  tk8.6-blt2.5                                 2.5.3+dfsg-3                         armhf        graphics extension library for Tcl/Tk - library
 ii  traceroute                                   1:2.1.0-2                            armhf        Traces the route taken by packets over an IPv4/IPv6 network
 ii  tree                                         1.7.0-5                              armhf        displays an indented directory tree, in color
@@ -1352,6 +1370,8 @@ ii  whiptail                                     0.52.19-1                      
 ii  wireless-regdb                               2016.06.10-1                         all          wireless regulatory database
 ii  wireless-tools                               30~pre9-12                           armhf        Tools for manipulating Linux Wireless Extensions
 ii  wiringpi                                     2.44+1                               armhf        The wiringPi libraries, headers and gpio command
+ii  wolfram-engine                               11.2.0+2018011502                    armhf        Mathematica® and the Wolfram Language
+ii  wolframscript                                1.2.0-11                             armhf        WolframScript (for the Command Line)
 ii  wpasupplicant                                2:2.4-1+deb9u1                       armhf        client support for WPA and WPA2 (IEEE 802.11i)
 ii  x11-common                                   1:7.7+19                             all          X Window System (X.Org) infrastructure
 ii  x11-utils                                    7.7+3                                armhf        X11 utilities
