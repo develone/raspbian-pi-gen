@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Lazarus IDE (Ultibo Edition)
+Comment=A free pascal platform for bare metal development
+Exec=/home/pi/ultibo/core/lazarus.sh
+Icon=/home/pi/ultibo/core/images/icons/lazarus.ico
+Terminal=false
+Type=Application
+Categories=Development;IDE;
+X-Desktop-File-Install-Version=0.22
