@@ -1,0 +1,1451 @@
+pi@raspberrypi:~/Userland $ ./buildme 
+~/Userland/build/raspberry/release ~/Userland
+-- The C compiler identification is GNU 6.3.0
+-- The CXX compiler identification is GNU 6.3.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning at makefiles/cmake/arm-linux.cmake:5 (message):
+    *********************************************************
+    *   CMAKE_TOOLCHAIN_FILE not defined                    *
+    *   This is correct for compiling on the Raspberry Pi   *
+    *                                                       *
+    *   If you are cross-compiling on some other machine    *
+    *   then DELETE the build directory and re-run with:    *
+    *   -DCMAKE_TOOLCHAIN_FILE=toolchain_file.cmake         *
+    *                                                       *
+    *   Toolchain files are in makefiles/cmake/toolchains.  *
+    *********************************************************
+Call Stack (most recent call first):
+  CMakeLists.txt:35 (include)
+
+
+-- Looking for execinfo.h
+-- Looking for execinfo.h - found
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/pi/Userland/build/raspberry/release
+Scanning dependencies of target vcfiled_check
+Scanning dependencies of target khrn_client
+Scanning dependencies of target vcos
+Scanning dependencies of target khrn_static
+[  0%] Building C object interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_check.dir/vcfiled_check.c.o
+[  0%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/vcos_pthreads.c.o
+[  0%] Building C object interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_pointermap.c.o
+[  0%] Linking C static library ../../../../../../lib/libvcfiled_check.a
+[  0%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_config.c.o
+[  0%] Built target vcfiled_check
+[  1%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/vcos_dlfcn.c.o
+[  2%] Building C object interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_vector.c.o
+Scanning dependencies of target GLESv2_static
+[  3%] Building C object interface/khronos/CMakeFiles/GLESv2_static.dir/glxx/glxx_client.c.o
+[  3%] Building C object interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash.c.o
+[  3%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_context.c.o
+[  3%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/glibc/vcos_backtrace.c.o
+[  3%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/generic/vcos_generic_event_flags.c.o
+[  3%] Building ASM object interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_int_hash_asm.s.o
+[  3%] Building C object interface/khronos/CMakeFiles/khrn_client.dir/common/khrn_client_cache.c.o
+[  3%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client.c.o
+[  3%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/generic/vcos_mem_from_malloc.c.o
+[  3%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/generic/vcos_generic_named_sem.c.o
+[  4%] Linking C static library ../../../../lib/libkhrn_client.a
+[  5%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/generic/vcos_generic_safe_string.c.o
+[  5%] Built target khrn_client
+[  5%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_get_proc.c.o
+[  5%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/generic/vcos_generic_reentrant_mtx.c.o
+[  5%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/generic/vcos_abort.c.o
+[  5%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/generic/vcos_cmd.c.o
+[  6%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/egl/egl_client_surface.c.o
+[  7%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/generic/vcos_init.c.o
+[  7%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_driver_monitor_client.c.o
+[  7%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/generic/vcos_msgqueue.c.o
+Scanning dependencies of target EGL_static
+[  7%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_perf_monitor_client.c.o
+[  7%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/generic/vcos_logcat.c.o
+[  7%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_global_image_client.c.o
+[  7%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_config.c.o
+[  7%] Building C object interface/vcos/pthreads/CMakeFiles/vcos.dir/__/generic/vcos_generic_blockpool.c.o
+[  8%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_brcm_flush_client.c.o
+[  9%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_context.c.o
+[  9%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client.c.o
+[  9%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_image_client.c.o
+[  9%] Linking C shared library ../../../../../lib/libvcos.so
+[  9%] Built target vcos
+[  9%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_get_proc.c.o
+[  9%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_sync_client.c.o
+Scanning dependencies of target debug_sym
+[  9%] Building C object host_applications/linux/libs/debug_sym/CMakeFiles/debug_sym.dir/debug_sym.c.o
+[  9%] Linking C static library ../../../../lib/libGLESv2_static.a
+[  9%] Built target GLESv2_static
+[  9%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/egl/egl_client_surface.c.o
+[  9%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_egl_image_client.c.o
+Scanning dependencies of target mmal_components_extra
+[  9%] Built target mmal_components_extra
+[  9%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_khr_lock_surface_client.c.o
+[  9%] Linking C shared library ../../../../../../lib/libdebug_sym.so
+[  9%] Built target debug_sym
+[ 10%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_driver_monitor_client.c.o
+Scanning dependencies of target mmal_omxutil
+[ 11%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/ext_gl_debug_marker.c.o
+Scanning dependencies of target containers_net_extra
+[ 11%] Built target containers_net_extra
+[ 11%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_image.c.o
+[ 11%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omxutil.dir/mmalomx_util_params.c.o
+[ 11%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_perf_monitor_client.c.o
+Scanning dependencies of target containers_dump_pktfile
+[ 11%] Building C object containers/test/CMakeFiles/containers_dump_pktfile.dir/dump_pktfile.c.o
+[ 11%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_util.c.o
+[ 11%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omxutil.dir/mmalomx_util_params_audio.c.o
+[ 11%] Linking C executable ../../../../bin/containers_dump_pktfile
+[ 11%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_global_image_client.c.o
+[ 11%] Built target containers_dump_pktfile
+[ 11%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omxutil.dir/mmalomx_util_params_video.c.o
+In file included from /home/pi/Userland/interface/khronos/common/khrn_int_util.c:30:0:
+/home/pi/Userland/interface/khronos/common/khrn_int_util.c: In function ‘khrn_clip_range2’:
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:145:57: warning: assuming signed overflow does not occur when assuming that (X - c) <= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z < x) ? (int32_t)0x7fffffff : z) : ((z > x) ? (int32_t)0x80000000 : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:151:57: warning: assuming signed overflow does not occur when assuming that (X + c) >= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z > x) ? (int32_t)0x80000000 : z) : ((z < x) ? (int32_t)0x7fffffff : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:145:57: warning: assuming signed overflow does not occur when assuming that (X - c) <= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z < x) ? (int32_t)0x7fffffff : z) : ((z > x) ? (int32_t)0x80000000 : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:151:57: warning: assuming signed overflow does not occur when assuming that (X + c) >= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z > x) ? (int32_t)0x80000000 : z) : ((z < x) ? (int32_t)0x7fffffff : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scanning dependencies of target containers_test_extra
+[ 11%] Built target containers_test_extra
+[ 12%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omxutil.dir/mmalomx_util_params_camera.c.o
+[ 12%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_options.c.o
+[ 13%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_global_image_map.c.o
+[ 13%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_brcm_flush_client.c.o
+Scanning dependencies of target debug_sym_static
+[ 14%] Building C object host_applications/linux/libs/debug_sym/CMakeFiles/debug_sym_static.dir/debug_sym.c.o
+[ 14%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omxutil.dir/mmalomx_util_params_misc.c.o
+[ 14%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_image_client.c.o
+[ 14%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_rpc_linux.c.o
+[ 14%] Linking C shared library ../../../../../lib/libmmal_omxutil.so
+[ 14%] Linking C static library ../../../../../../lib/libdebug_sym_static.a
+[ 14%] Built target mmal_omxutil
+[ 14%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/linux/khrn_client_platform_linux.c.o
+[ 15%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_sync_client.c.o
+[ 15%] Built target debug_sym_static
+[ 15%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_int_mat3x3.c.o
+Scanning dependencies of target fdt
+[ 16%] Building C object opensrc/helpers/libfdt/CMakeFiles/fdt.dir/fdt.c.o
+[ 16%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_egl_image_client.c.o
+[ 16%] Building C object opensrc/helpers/libfdt/CMakeFiles/fdt.dir/fdt_empty_tree.c.o
+[ 16%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_khr_lock_surface_client.c.o
+[ 16%] Building C object opensrc/helpers/libfdt/CMakeFiles/fdt.dir/fdt_ro.c.o
+[ 16%] Building C object opensrc/helpers/libfdt/CMakeFiles/fdt.dir/fdt_rw.c.o
+[ 16%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/vg/vg_client.c.o
+[ 16%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/ext_gl_debug_marker.c.o
+[ 17%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client.c.o
+[ 18%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_image.c.o
+[ 19%] Building C object opensrc/helpers/libfdt/CMakeFiles/fdt.dir/fdt_sw.c.o
+[ 19%] Building C object opensrc/helpers/libfdt/CMakeFiles/fdt.dir/fdt_strerror.c.o
+[ 19%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_int_util.c.o
+[ 19%] Building C object opensrc/helpers/libfdt/CMakeFiles/fdt.dir/fdt_wip.c.o
+[ 19%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_options.c.o
+[ 19%] Linking C static library ../../../../../lib/libfdt.a
+[ 19%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/egl_openmaxil_client.c.o
+In file included from /home/pi/Userland/interface/khronos/common/khrn_int_util.c:30:0:
+/home/pi/Userland/interface/khronos/common/khrn_int_util.c: In function ‘khrn_clip_range2’:
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:145:57: warning: assuming signed overflow does not occur when assuming that (X - c) <= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z < x) ? (int32_t)0x7fffffff : z) : ((z > x) ? (int32_t)0x80000000 : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:151:57: warning: assuming signed overflow does not occur when assuming that (X + c) >= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z > x) ? (int32_t)0x80000000 : z) : ((z < x) ? (int32_t)0x7fffffff : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:145:57: warning: assuming signed overflow does not occur when assuming that (X - c) <= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z < x) ? (int32_t)0x7fffffff : z) : ((z > x) ? (int32_t)0x80000000 : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:151:57: warning: assuming signed overflow does not occur when assuming that (X + c) >= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z > x) ? (int32_t)0x80000000 : z) : ((z < x) ? (int32_t)0x7fffffff : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 19%] Built target fdt
+[ 19%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_draw_texture_client.c.o
+[ 19%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client_global_image_map.c.o
+[ 19%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_rpc_linux.c.o
+[ 20%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/linux/khrn_client_platform_linux.c.o
+Scanning dependencies of target vchiq_arm
+[ 20%] Building C object interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_lib.c.o
+[ 20%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_query_matrix_client.c.o
+[ 20%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_int_mat3x3.c.o
+Scanning dependencies of target vcfiled_lock_test
+[ 21%] Building C object interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled_lock_test.dir/vcfiled_lock_test.c.o
+[ 21%] Linking C executable ../../../../../../bin/vcfiled_lock_test
+[ 21%] Built target vcfiled_lock_test
+[ 22%] Building C object interface/vchiq_arm/CMakeFiles/vchiq_arm.dir/vchiq_util.c.o
+[ 22%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/vg/vg_client.c.o
+Scanning dependencies of target vcsm
+[ 23%] Building C object host_applications/linux/libs/sm/CMakeFiles/vcsm.dir/user-vcsm.c.o
+[ 23%] Linking C shared library ../../../../lib/libvchiq_arm.so
+[ 23%] Built target vchiq_arm
+[ 23%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/common/khrn_client.c.o
+Scanning dependencies of target mmal_core
+[ 23%] Building C object interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_format.c.o
+[ 23%] Linking C shared library ../../../../../../lib/libvcsm.so
+[ 23%] Built target vcsm
+[ 24%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_framebuffer_object.c.o
+[ 24%] Building C object interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_port.c.o
+[ 24%] Building C object interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_port_clock.c.o
+[ 24%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_map_buffer.c.o
+[ 24%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/ext/gl_oes_matrix_palette_client.c.o
+[ 25%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/egl_openmaxil_client.c.o
+[ 25%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/glxx/glxx_client.c.o
+[ 25%] Building C object interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_component.c.o
+[ 26%] Building C object interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_buffer.c.o
+[ 26%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_stream.c.o
+[ 26%] Building C object interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_queue.c.o
+[ 26%] Building C object interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_pool.c.o
+Scanning dependencies of target mmal_util
+[ 26%] Building C object interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_il.c.o
+[ 26%] Building C object interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_events.c.o
+[ 27%] Building C object interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_logging.c.o
+[ 27%] Building C object interface/mmal/core/CMakeFiles/mmal_core.dir/mmal_clock.c.o
+[ 28%] Building C object interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util.c.o
+[ 28%] Linking C shared library ../../../../../lib/libmmal_core.so
+[ 28%] Building C object interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_connection.c.o
+[ 28%] Built target mmal_core
+[ 29%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_draw_texture_client.c.o
+[ 29%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client.c.o
+[ 29%] Building C object interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_graph.c.o
+[ 29%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_query_matrix_client.c.o
+[ 29%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_framebuffer_object.c.o
+[ 29%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_map_buffer.c.o
+[ 30%] Building C object interface/khronos/CMakeFiles/EGL_static.dir/ext/gl_oes_matrix_palette_client.c.o
+[ 30%] Linking C static library ../../../../lib/libEGL_static.a
+[ 30%] Building C object interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_list.c.o
+[ 30%] Built target EGL_static
+[ 30%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_server_api.c.o
+/home/pi/Userland/interface/khronos/wf/wfc_client_server_api.c:59:22: warning: ‘wfc_client_server_api_send_stream’ defined but not used [-Wunused-function]
+ static VCOS_STATUS_T wfc_client_server_api_send_stream(WFC_IPC_MSG_TYPE msg_type, WFCNativeStreamType stream)
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 30%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/wf/wfc_client_ipc.c.o
+[ 30%] Building C object interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_param_convert.c.o
+Scanning dependencies of target mmal_vc_client
+Scanning dependencies of target containers
+[ 31%] Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_client.c.o
+[ 31%] Building C object containers/CMakeFiles/containers.dir/core/containers.c.o
+[ 32%] Building C object interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util_params.c.o
+[ 32%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/openwfc/khrn_client_platform_openwfc.c.o
+[ 32%] Building C object interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_component_wrapper.c.o
+[ 33%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_pointermap.c.o
+[ 33%] Building C object containers/CMakeFiles/containers.dir/core/containers_io.c.o
+[ 33%] Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_shm.c.o
+[ 33%] Building C object interface/mmal/util/CMakeFiles/mmal_util.dir/mmal_util_rational.c.o
+[ 33%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_vector.c.o
+[ 33%] Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api.c.o
+[ 33%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_hash.c.o
+[ 33%] Linking C shared library ../../../../../lib/libmmal_util.so
+[ 33%] Building ASM object interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_int_hash_asm.s.o
+[ 33%] Building C object interface/khronos/CMakeFiles/khrn_static.dir/common/khrn_client_cache.c.o
+[ 33%] Built target mmal_util
+[ 33%] Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_opaque_alloc.c.o
+[ 33%] Building C object containers/CMakeFiles/containers.dir/core/containers_io_helpers.c.o
+Scanning dependencies of target dtovl
+[ 33%] Building C object helpers/dtoverlay/CMakeFiles/dtovl.dir/dtoverlay.c.o
+[ 34%] Linking C static library ../../../../lib/libkhrn_static.a
+[ 34%] Built target khrn_static
+[ 35%] Building C object containers/CMakeFiles/containers.dir/core/containers_codecs.c.o
+[ 35%] Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_msgnames.c.o
+[ 36%] Building C object interface/mmal/vc/CMakeFiles/mmal_vc_client.dir/mmal_vc_api_drm.c.o
+[ 36%] Building C object containers/CMakeFiles/containers.dir/core/containers_utils.c.o
+[ 36%] Linking C shared library ../../../../../lib/libmmal_vc_client.so
+Scanning dependencies of target vchostif
+[ 37%] Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcfilesys.c.o
+[ 37%] Built target mmal_vc_client
+[ 37%] Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/linux/vcmisc.c.o
+[ 37%] Building C object containers/CMakeFiles/containers.dir/core/containers_writer_utils.c.o
+[ 37%] Building C object containers/CMakeFiles/containers.dir/core/containers_loader.c.o
+Scanning dependencies of target vchiq_test
+[ 37%] Building C object interface/vchiq_arm/CMakeFiles/vchiq_test.dir/vchiq_test.c.o
+[ 37%] Linking C shared library ../../../../lib/libdtovl.so
+[ 37%] Building C object containers/CMakeFiles/containers.dir/core/containers_filters.c.o
+[ 37%] Built target dtovl
+[ 38%] Building C object containers/CMakeFiles/containers.dir/core/containers_logging.c.o
+[ 38%] Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gencmd.c.o
+Scanning dependencies of target mmal_omx
+[ 38%] Building C object containers/CMakeFiles/containers.dir/core/containers_uri.c.o
+[ 38%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omx.dir/mmalomx_core.c.o
+[ 38%] Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_filesys.c.o
+[ 38%] Building C object containers/CMakeFiles/containers.dir/core/containers_bits.c.o
+[ 38%] Building C object containers/CMakeFiles/containers.dir/core/containers_list.c.o
+[ 38%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omx.dir/mmalomx_logging.c.o
+[ 39%] Building C object containers/CMakeFiles/containers.dir/core/containers_index.c.o
+[ 39%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omx.dir/mmalomx_commands.c.o
+[ 39%] Building C object containers/CMakeFiles/containers.dir/io/io_file.c.o
+[ 39%] Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_gpuserv.c.o
+[ 39%] Building C object containers/CMakeFiles/containers.dir/io/io_null.c.o
+[ 40%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omx.dir/mmalomx_buffer.c.o
+[ 40%] Building C object containers/CMakeFiles/containers.dir/io/io_net.c.o
+[ 41%] Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_tvservice.c.o
+[ 41%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omx.dir/mmalomx_marks.c.o
+[ 41%] Building C object containers/CMakeFiles/containers.dir/io/io_pktfile.c.o
+[ 41%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omx.dir/mmalomx_roles.c.o
+[ 42%] Building C object containers/CMakeFiles/containers.dir/io/io_http.c.o
+[ 42%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omx.dir/mmalomx_parameters.c.o
+[ 42%] Linking C executable ../../../../bin/vchiq_test
+[ 42%] Built target vchiq_test
+[ 43%] Building C object interface/mmal/openmaxil/CMakeFiles/mmal_omx.dir/mmalomx_registry.c.o
+[ 43%] Building C object containers/CMakeFiles/containers.dir/net/net_sockets_common.c.o
+Scanning dependencies of target brcmjpeg
+[ 43%] Building C object interface/mmal/client/brcmjpeg/CMakeFiles/brcmjpeg.dir/brcmjpeg.c.o
+[ 43%] Linking C shared library ../../../../../lib/libmmal_omx.so
+[ 43%] Built target mmal_omx
+[ 43%] Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_cecservice.c.o
+/home/pi/Userland/interface/vmcs_host/vc_vchi_cecservice.c:138:23: warning: ‘max_devicetype_strings’ defined but not used [-Wunused-const-variable=]
+ static const uint32_t max_devicetype_strings = sizeof(cecservice_devicetype_strings)/sizeof(char *);
+                       ^~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/vmcs_host/vc_vchi_cecservice.c:106:23: warning: ‘max_command_strings’ defined but not used [-Wunused-const-variable=]
+ static const uint32_t max_command_strings = sizeof(cecservice_command_strings)/sizeof(char *);
+                       ^~~~~~~~~~~~~~~~~~~
+Scanning dependencies of target dtoverlay
+[ 44%] Building C object host_applications/linux/apps/dtoverlay/CMakeFiles/dtoverlay.dir/dtoverlay_main.c.o
+[ 44%] Building C object containers/CMakeFiles/containers.dir/net/net_sockets_bsd.c.o
+[ 44%] Building C object containers/CMakeFiles/containers.dir/core/packetizers.c.o
+[ 44%] Linking C shared library ../../../../../../lib/libbrcmjpeg.so
+[ 44%] Building C object host_applications/linux/apps/dtoverlay/CMakeFiles/dtoverlay.dir/utils.c.o
+[ 44%] Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_vchi_dispmanx.c.o
+[ 44%] Built target brcmjpeg
+[ 45%] Building C object containers/CMakeFiles/containers.dir/mpga/mpga_packetizer.c.o
+[ 45%] Building C object interface/vmcs_host/CMakeFiles/vchostif.dir/vc_service_common.c.o
+/home/pi/Userland/interface/vmcs_host/vc_service_common.c: In function ‘vchi2service_status_string’:
+/home/pi/Userland/interface/vmcs_host/vc_service_common.c:51:4: warning: case value ‘1’ not in enumerated type ‘VC_SERVICE_VCHI_STATUS_T {aka enum <anonymous>}’ [-Wswitch]
+    case VCHIQ_RETRY:
+    ^~~~
+Scanning dependencies of target dtmerge
+[ 45%] Building C object host_applications/linux/apps/dtmerge/CMakeFiles/dtmerge.dir/dtmerge.c.o
+[ 45%] Linking C executable ../../../../../../bin/dtoverlay
+[ 45%] Linking C executable ../../../../../../bin/dtmerge
+[ 45%] Building C object containers/CMakeFiles/containers.dir/mpgv/mpgv_packetizer.c.o
+[ 46%] Linking C static library ../../../../lib/libvchostif.a
+[ 46%] Built target dtoverlay
+Scanning dependencies of target brcmjpeg_test
+[ 46%] Building C object interface/mmal/client/brcmjpeg/CMakeFiles/brcmjpeg_test.dir/brcmjpeg_test.c.o
+[ 46%] Built target dtmerge
+[ 46%] Built target vchostif
+[ 46%] Building C object containers/CMakeFiles/containers.dir/pcm/pcm_packetizer.c.o
+Scanning dependencies of target bcm_host
+[ 46%] Building C object host_applications/linux/libs/bcm_host/CMakeFiles/bcm_host.dir/bcm_host.c.o
+[ 47%] Linking C executable ../../../../../../bin/brcmjpeg_test
+[ 47%] Built target brcmjpeg_test
+Scanning dependencies of target vcfiled
+[ 48%] Building C object interface/vmcs_host/linux/vcfiled/CMakeFiles/vcfiled.dir/vcfiled.c.o
+[ 48%] Building C object host_applications/linux/libs/bcm_host/CMakeFiles/bcm_host.dir/__/__/__/__/interface/vmcs_host/linux/vcfilesys.c.o
+Scanning dependencies of target vcgencmd
+[ 48%] Building C object host_applications/linux/apps/gencmd/CMakeFiles/vcgencmd.dir/gencmd.c.o
+[ 48%] Building C object containers/CMakeFiles/containers.dir/h264/avc1_packetizer.c.o
+[ 48%] Linking C executable ../../../../../../bin/vcfiled
+[ 48%] Built target vcfiled
+[ 48%] Building C object host_applications/linux/libs/bcm_host/CMakeFiles/bcm_host.dir/__/__/__/__/interface/vmcs_host/linux/vcfiled/vcfiled_check.c.o
+[ 48%] Linking C executable ../../../../../../bin/vcgencmd
+[ 48%] Built target vcgencmd
+Scanning dependencies of target tvservice
+Scanning dependencies of target vcmailbox
+[ 48%] Building C object host_applications/linux/apps/vcmailbox/CMakeFiles/vcmailbox.dir/vcmailbox.c.o
+[ 48%] Building C object host_applications/linux/apps/tvservice/CMakeFiles/tvservice.dir/tvservice.c.o
+[ 48%] Linking C shared library ../../../lib/libcontainers.so
+[ 49%] Linking C executable ../../../../../../bin/vcmailbox
+[ 49%] Linking C shared library ../../../../../../lib/libbcm_host.so
+[ 49%] Built target containers
+[ 49%] Linking C executable ../../../../../../bin/tvservice
+Scanning dependencies of target vcsmem
+[ 49%] Built target vcmailbox
+[ 49%] Built target bcm_host
+[ 49%] Building C object host_applications/linux/apps/smem/CMakeFiles/vcsmem.dir/smem.c.o
+Scanning dependencies of target reader_mp4
+Scanning dependencies of target mmal_components
+[ 50%] Building C object containers/mp4/CMakeFiles/reader_mp4.dir/mp4_reader.c.o
+[ 50%] Built target tvservice
+Scanning dependencies of target writer_mp4
+[ 50%] Building C object interface/mmal/components/CMakeFiles/mmal_components.dir/container_reader.c.o
+[ 50%] Building C object containers/mp4/CMakeFiles/writer_mp4.dir/mp4_writer.c.o
+/home/pi/Userland/containers/mp4/mp4_writer.c: In function ‘mp4_writer_add_track’:
+/home/pi/Userland/containers/mp4/mp4_writer.c:1191:7: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+       if(format->codec_variant == VC_FOURCC('a','v','c','C')) type = VC_FOURCC('a','v','c','1'); break;
+       ^~
+/home/pi/Userland/containers/mp4/mp4_writer.c:1191:98: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘if’
+       if(format->codec_variant == VC_FOURCC('a','v','c','C')) type = VC_FOURCC('a','v','c','1'); break;
+                                                                                                  ^~~~~
+[ 50%] Linking C executable ../../../../../../bin/vcsmem
+[ 50%] Built target vcsmem
+[ 51%] Building C object interface/mmal/components/CMakeFiles/mmal_components.dir/null_sink.c.o
+Scanning dependencies of target reader_ps
+[ 52%] Building C object containers/mpeg/CMakeFiles/reader_ps.dir/ps_reader.c.o
+[ 52%] Building C object interface/mmal/components/CMakeFiles/mmal_components.dir/passthrough.c.o
+[ 52%] Building C object interface/mmal/components/CMakeFiles/mmal_components.dir/scheduler.c.o
+[ 52%] Linking C shared library ../../../../lib/reader_mp4.so
+[ 53%] Linking C shared library ../../../../lib/writer_mp4.so
+[ 53%] Built target reader_mp4
+[ 53%] Built target writer_mp4
+[ 53%] Building C object interface/mmal/components/CMakeFiles/mmal_components.dir/splitter.c.o
+[ 53%] Building C object interface/mmal/components/CMakeFiles/mmal_components.dir/copy.c.o
+Scanning dependencies of target reader_mpga
+[ 53%] Linking C shared library ../../../../lib/reader_ps.so
+[ 53%] Building C object containers/mpga/CMakeFiles/reader_mpga.dir/mpga_reader.c.o
+[ 53%] Built target reader_ps
+Scanning dependencies of target reader_binary
+[ 53%] Building C object containers/binary/CMakeFiles/reader_binary.dir/binary_reader.c.o
+[ 54%] Building C object interface/mmal/components/CMakeFiles/mmal_components.dir/artificial_camera.c.o
+[ 54%] Building C object interface/mmal/components/CMakeFiles/mmal_components.dir/aggregator.c.o
+[ 54%] Linking C shared library ../../../../lib/reader_binary.so
+[ 54%] Building C object interface/mmal/components/CMakeFiles/mmal_components.dir/clock.c.o
+[ 54%] Built target reader_binary
+[ 54%] Building C object interface/mmal/components/CMakeFiles/mmal_components.dir/spdif.c.o
+Scanning dependencies of target writer_binary
+[ 55%] Building C object containers/binary/CMakeFiles/writer_binary.dir/binary_writer.c.o
+[ 55%] Linking C shared library ../../../../lib/reader_mpga.so
+[ 55%] Linking C shared library ../../../../lib/writer_binary.so
+[ 55%] Built target reader_mpga
+[ 55%] Built target writer_binary
+Scanning dependencies of target reader_mkv
+Scanning dependencies of target reader_wav
+[ 55%] Building C object containers/mkv/CMakeFiles/reader_mkv.dir/matroska_reader.c.o
+[ 55%] Building C object containers/wav/CMakeFiles/reader_wav.dir/wav_reader.c.o
+Scanning dependencies of target reader_asf
+[ 55%] Building C object containers/asf/CMakeFiles/reader_asf.dir/asf_reader.c.o
+[ 56%] Linking C shared library ../../../../../lib/libmmal_components.so
+/home/pi/Userland/containers/asf/asf_reader.c: In function ‘seek_to_positions’:
+/home/pi/Userland/containers/asf/asf_reader.c:1939:28: warning: unused variable ‘p_state’ [-Wunused-variable]
+          ASF_PACKET_STATE *p_state = &p_ctx->tracks[index]->priv->module->local_packet_state;
+                            ^~~~~~~
+[ 56%] Built target mmal_components
+Scanning dependencies of target writer_asf
+[ 57%] Building C object containers/asf/CMakeFiles/writer_asf.dir/asf_writer.c.o
+[ 57%] Linking C shared library ../../../../lib/reader_wav.so
+/home/pi/Userland/containers/asf/asf_writer.c:128:21: warning: ‘asf_guid_padding’ defined but not used [-Wunused-const-variable=]
+ static const GUID_T asf_guid_padding = {0x1806D474, 0xCADF, 0x4509, {0xA4, 0xBA, 0x9A, 0xAB, 0xCB, 0x96, 0xAA, 0xE8}};
+                     ^~~~~~~~~~~~~~~~
+/home/pi/Userland/containers/asf/asf_writer.c:127:21: warning: ‘asf_guid_metadata’ defined but not used [-Wunused-const-variable=]
+ static const GUID_T asf_guid_metadata = {0xC5F8CBEA, 0x5BAF, 0x4877, {0x84, 0x67, 0xAA, 0x8C, 0x44, 0xFA, 0x4C, 0xCA}};
+                     ^~~~~~~~~~~~~~~~~
+/home/pi/Userland/containers/asf/asf_writer.c:126:21: warning: ‘asf_guid_language_list’ defined but not used [-Wunused-const-variable=]
+ static const GUID_T asf_guid_language_list = {0x7C4346A9, 0xEFE0, 0x4BFC, {0xB2, 0x29, 0x39, 0x3E, 0xDE, 0x41, 0x5C, 0x85}};
+                     ^~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/containers/asf/asf_writer.c:125:21: warning: ‘asf_guid_stream_bitrate_props’ defined but not used [-Wunused-const-variable=]
+ static const GUID_T asf_guid_stream_bitrate_props = {0x7BF875CE, 0x468D, 0x11D1, {0x8D, 0x82, 0x00, 0x60, 0x97, 0xC9, 0xA2, 0xB2}};
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/containers/asf/asf_writer.c:124:21: warning: ‘asf_guid_ext_content_description’ defined but not used [-Wunused-const-variable=]
+ static const GUID_T asf_guid_ext_content_description = {0xD2D0A440, 0xE307, 0x11D2, {0x97, 0xF0, 0x00, 0xA0, 0xC9, 0x5E, 0xA8, 0x50}};
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/containers/asf/asf_writer.c:123:21: warning: ‘asf_guid_content_description’ defined but not used [-Wunused-const-variable=]
+ static const GUID_T asf_guid_content_description = {0x75B22633, 0x668E, 0x11CF, {0xA6, 0xD9, 0x00, 0xAA, 0x00, 0x62, 0xCE, 0x6C}};
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/containers/asf/asf_writer.c:122:21: warning: ‘asf_guid_codec_list’ defined but not used [-Wunused-const-variable=]
+ static const GUID_T asf_guid_codec_list = {0x86D15240, 0x311D, 0x11D0, {0xA3, 0xA4, 0x00, 0xA0, 0xC9, 0x03, 0x48, 0xF6}};
+                     ^~~~~~~~~~~~~~~~~~~
+[ 57%] Built target reader_wav
+Scanning dependencies of target reader_flv
+[ 57%] Building C object containers/flash/CMakeFiles/reader_flv.dir/flv_reader.c.o
+[ 57%] Linking C shared library ../../../../lib/writer_asf.so
+[ 57%] Built target writer_asf
+Scanning dependencies of target reader_avi
+[ 57%] Building C object containers/avi/CMakeFiles/reader_avi.dir/avi_reader.c.o
+/home/pi/Userland/containers/asf/asf_reader.c:1855:12: warning: ‘track_best_pts[0]’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+    int64_t track_best_pts[ASF_TRACKS_MAX];
+            ^~~~~~~~~~~~~~
+[ 57%] Linking C shared library ../../../../lib/reader_mkv.so
+[ 57%] Built target reader_mkv
+Scanning dependencies of target writer_avi
+[ 57%] Building C object containers/avi/CMakeFiles/writer_avi.dir/avi_writer.c.o
+[ 58%] Linking C shared library ../../../../lib/reader_flv.so
+[ 58%] Built target reader_flv
+[ 58%] Linking C shared library ../../../../lib/reader_asf.so
+Scanning dependencies of target reader_rtp
+[ 58%] Building C object containers/rtp/CMakeFiles/reader_rtp.dir/rtp_reader.c.o
+[ 58%] Built target reader_asf
+Scanning dependencies of target reader_rtsp
+[ 58%] Building C object containers/rtsp/CMakeFiles/reader_rtsp.dir/rtsp_reader.c.o
+[ 59%] Building C object containers/rtp/CMakeFiles/reader_rtp.dir/rtp_h264.c.o
+[ 60%] Linking C shared library ../../../../lib/reader_avi.so
+[ 60%] Built target reader_avi
+Scanning dependencies of target reader_rcv
+[ 60%] Building C object containers/rcv/CMakeFiles/reader_rcv.dir/rcv_reader.c.o
+[ 60%] Linking C shared library ../../../../lib/writer_avi.so
+[ 60%] Built target writer_avi
+Scanning dependencies of target reader_rv9
+[ 60%] Building C object containers/rv9/CMakeFiles/reader_rv9.dir/rv9_reader.c.o
+[ 61%] Linking C shared library ../../../../lib/reader_rtsp.so
+[ 61%] Building C object containers/rtp/CMakeFiles/reader_rtp.dir/rtp_mpeg4.c.o
+[ 61%] Built target reader_rtsp
+Scanning dependencies of target reader_qsynth
+[ 61%] Building C object containers/qsynth/CMakeFiles/reader_qsynth.dir/qsynth_reader.c.o
+[ 61%] Linking C shared library ../../../../lib/reader_rcv.so
+[ 61%] Linking C shared library ../../../../lib/reader_rv9.so
+[ 61%] Built target reader_rcv
+[ 61%] Built target reader_rv9
+Scanning dependencies of target reader_simple
+Scanning dependencies of target writer_simple
+[ 61%] Building C object containers/simple/CMakeFiles/reader_simple.dir/simple_reader.c.o
+[ 61%] Building C object containers/simple/CMakeFiles/writer_simple.dir/simple_writer.c.o
+[ 61%] Building C object containers/rtp/CMakeFiles/reader_rtp.dir/rtp_base64.c.o
+[ 61%] Linking C shared library ../../../../lib/reader_qsynth.so
+[ 61%] Built target reader_qsynth
+Scanning dependencies of target reader_raw_video
+[ 61%] Linking C shared library ../../../../lib/reader_rtp.so
+[ 61%] Building C object containers/raw/CMakeFiles/reader_raw_video.dir/raw_video_reader.c.o
+[ 62%] Linking C shared library ../../../../lib/writer_simple.so
+[ 62%] Built target reader_rtp
+Scanning dependencies of target writer_raw_video
+[ 62%] Building C object containers/raw/CMakeFiles/writer_raw_video.dir/raw_video_writer.c.o
+[ 62%] Built target writer_simple
+Scanning dependencies of target writer_dummy
+[ 62%] Building C object containers/dummy/CMakeFiles/writer_dummy.dir/dummy_writer.c.o
+[ 63%] Linking C shared library ../../../../lib/reader_simple.so
+[ 63%] Built target reader_simple
+[ 63%] Linking C shared library ../../../../lib/writer_raw_video.so
+Scanning dependencies of target reader_metadata_id3
+[ 63%] Linking C shared library ../../../../lib/writer_dummy.so
+[ 63%] Building C object containers/metadata/id3/CMakeFiles/reader_metadata_id3.dir/id3_metadata_reader.c.o
+[ 63%] Built target writer_raw_video
+Scanning dependencies of target containers_test_bits
+[ 63%] Built target writer_dummy
+Scanning dependencies of target containers_test_uri
+[ 64%] Building C object containers/test/CMakeFiles/containers_test_bits.dir/test_bits.c.o
+[ 64%] Building C object containers/test/CMakeFiles/containers_test_uri.dir/test_uri.c.o
+[ 65%] Linking C shared library ../../../../lib/reader_raw_video.so
+[ 65%] Built target reader_raw_video
+Scanning dependencies of target containers_check_frame_int
+[ 66%] Building C object containers/test/CMakeFiles/containers_check_frame_int.dir/check_frame_int.c.o
+[ 66%] Linking C shared library ../../../../../lib/reader_metadata_id3.so
+[ 66%] Built target reader_metadata_id3
+Scanning dependencies of target containers_stream_server
+[ 66%] Linking C executable ../../../../bin/containers_test_bits
+[ 66%] Building C object containers/test/CMakeFiles/containers_stream_server.dir/stream_server.c.o
+[ 66%] Built target containers_test_bits
+Scanning dependencies of target containers_test
+[ 66%] Linking C executable ../../../../bin/containers_test_uri
+[ 66%] Linking C executable ../../../../bin/containers_check_frame_int
+[ 66%] Building C object containers/test/CMakeFiles/containers_test.dir/test.c.o
+[ 66%] Linking C executable ../../../../bin/containers_stream_server
+[ 66%] Built target containers_test_uri
+[ 66%] Built target containers_check_frame_int
+Scanning dependencies of target containers_datagram_sender
+Scanning dependencies of target containers_datagram_receiver
+[ 67%] Building C object containers/test/CMakeFiles/containers_datagram_receiver.dir/datagram_receiver.c.o
+[ 67%] Building C object containers/test/CMakeFiles/containers_datagram_sender.dir/datagram_sender.c.o
+[ 67%] Built target containers_stream_server
+Scanning dependencies of target containers_uri_pipe
+[ 68%] Building C object containers/test/CMakeFiles/containers_uri_pipe.dir/uri_pipe.c.o
+[ 68%] Linking C executable ../../../../bin/containers_datagram_receiver
+[ 68%] Linking C executable ../../../../bin/containers_datagram_sender
+[ 68%] Built target containers_datagram_receiver
+[ 68%] Built target containers_datagram_sender
+[ 68%] Building C object containers/test/CMakeFiles/containers_uri_pipe.dir/nb_io_unix.c.o
+Scanning dependencies of target containers_stream_client
+Scanning dependencies of target containers_rtp_decoder
+[ 68%] Building C object containers/test/CMakeFiles/containers_stream_client.dir/stream_client.c.o
+[ 68%] Building C object containers/test/CMakeFiles/containers_rtp_decoder.dir/rtp_decoder.c.o
+[ 68%] Linking C executable ../../../../bin/containers_uri_pipe
+[ 68%] Building C object containers/test/CMakeFiles/containers_stream_client.dir/nb_io_unix.c.o
+[ 68%] Built target containers_uri_pipe
+Scanning dependencies of target raspividyuv
+[ 68%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspividyuv.dir/RaspiCamControl.c.o
+[ 68%] Linking C executable ../../../../bin/containers_test
+[ 70%] Building C object containers/test/CMakeFiles/containers_rtp_decoder.dir/nb_io_unix.c.o
+[ 70%] Linking C executable ../../../../bin/containers_stream_client
+[ 70%] Built target containers_test
+[ 70%] Built target containers_stream_client
+[ 70%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspividyuv.dir/RaspiCLI.c.o
+[ 70%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspividyuv.dir/RaspiPreview.c.o
+[ 70%] Linking C executable ../../../../bin/containers_rtp_decoder
+[ 70%] Built target containers_rtp_decoder
+[ 70%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspividyuv.dir/RaspiVidYUV.c.o
+/home/pi/Userland/host_applications/linux/apps/raspicam/RaspiVidYUV.c:53:0: warning: "_GNU_SOURCE" redefined
+ #define _GNU_SOURCE
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+Scanning dependencies of target raspivid
+Scanning dependencies of target raspiyuv
+[ 71%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspivid.dir/RaspiCamControl.c.o
+[ 71%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspiyuv.dir/RaspiCamControl.c.o
+[ 71%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspivid.dir/RaspiCLI.c.o
+[ 71%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspivid.dir/RaspiPreview.c.o
+[ 71%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspivid.dir/RaspiVid.c.o
+[ 71%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspiyuv.dir/RaspiCLI.c.o
+[ 71%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspiyuv.dir/RaspiPreview.c.o
+[ 72%] Linking C executable ../../../../../../bin/raspividyuv
+[ 72%] Built target raspividyuv
+Scanning dependencies of target brcmEGL
+Scanning dependencies of target EGL
+[ 73%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspiyuv.dir/RaspiStillYUV.c.o
+/home/pi/Userland/host_applications/linux/apps/raspicam/RaspiStillYUV.c:50:0: warning: "_GNU_SOURCE" redefined
+ #define _GNU_SOURCE
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+[ 73%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/egl/egl_client_config.c.o
+[ 73%] Building C object interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_config.c.o
+[ 73%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/egl/egl_client_context.c.o
+[ 73%] Building C object interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_context.c.o
+[ 73%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/egl/egl_client.c.o
+[ 73%] Linking C executable ../../../../../../bin/raspiyuv
+[ 73%] Built target raspiyuv
+[ 73%] Building C object interface/khronos/CMakeFiles/EGL.dir/egl/egl_client.c.o
+Scanning dependencies of target mmal
+[ 74%] Linking C executable ../../../../../../bin/raspivid
+[ 74%] Building C object interface/mmal/CMakeFiles/mmal.dir/util/mmal_util.c.o
+[ 74%] Built target raspivid
+[ 74%] Building C object interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_get_proc.c.o
+[ 74%] Linking C shared library ../../../../lib/libmmal.so
+[ 74%] Built target mmal
+[ 75%] Building C object interface/khronos/CMakeFiles/EGL.dir/egl/egl_client_surface.c.o
+Scanning dependencies of target mmal_example_graph
+[ 76%] Building C object interface/mmal/test/CMakeFiles/mmal_example_graph.dir/examples/example_graph.c.o
+[ 77%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/egl/egl_client_get_proc.c.o
+[ 77%] Linking C executable ../../../../../bin/mmal_example_graph
+[ 77%] Built target mmal_example_graph
+[ 77%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_driver_monitor_client.c.o
+Scanning dependencies of target mmalplay
+[ 77%] Building C object interface/mmal/test/CMakeFiles/mmalplay.dir/__/__/__/host_applications/vmcs/test_apps/mmalplay/playback.c.o
+Scanning dependencies of target mmal_example_basic_1
+[ 77%] Building C object interface/mmal/test/CMakeFiles/mmal_example_basic_1.dir/examples/example_basic_1.c.o
+[ 77%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/egl/egl_client_surface.c.o
+[ 77%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_perf_monitor_client.c.o
+[ 77%] Linking C executable ../../../../../bin/mmal_example_basic_1
+[ 77%] Built target mmal_example_basic_1
+[ 77%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_global_image_client.c.o
+[ 77%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/egl_brcm_driver_monitor_client.c.o
+[ 78%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/egl_brcm_perf_monitor_client.c.o
+[ 78%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/egl_brcm_flush_client.c.o
+Scanning dependencies of target mmal_example_connections
+[ 78%] Building C object interface/mmal/test/CMakeFiles/mmal_example_connections.dir/examples/example_connections.c.o
+[ 78%] Building C object interface/mmal/test/CMakeFiles/mmalplay.dir/__/__/__/host_applications/vmcs/test_apps/mmalplay/mmalplay.c.o
+[ 78%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/egl_brcm_global_image_client.c.o
+[ 78%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_image_client.c.o
+[ 78%] Linking C executable ../../../../../bin/mmal_example_connections
+[ 78%] Built target mmal_example_connections
+[ 78%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_sync_client.c.o
+[ 79%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/egl_brcm_flush_client.c.o
+[ 80%] Linking C executable ../../../../../bin/mmalplay
+Scanning dependencies of target mmalcam
+[ 80%] Built target mmalplay
+[ 80%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/egl_khr_image_client.c.o
+[ 81%] Building C object interface/mmal/test/CMakeFiles/mmalcam.dir/__/__/__/host_applications/vmcs/test_apps/mmalcam/viewfinder.c.o
+Scanning dependencies of target mmal_example_basic_2
+[ 81%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_egl_image_client.c.o
+[ 81%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/egl_khr_sync_client.c.o
+[ 82%] Building C object interface/mmal/test/CMakeFiles/mmal_example_basic_2.dir/examples/example_basic_2.c.o
+[ 82%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/egl_khr_lock_surface_client.c.o
+[ 82%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/gl_oes_egl_image_client.c.o
+[ 82%] Linking C executable ../../../../../bin/mmal_example_basic_2
+[ 82%] Built target mmal_example_basic_2
+[ 83%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/egl_khr_lock_surface_client.c.o
+[ 83%] Building C object interface/mmal/test/CMakeFiles/mmalcam.dir/__/__/__/host_applications/vmcs/test_apps/mmalcam/mmalcam.c.o
+[ 84%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/ext_gl_debug_marker.c.o
+Scanning dependencies of target mmal_vc_diag
+[ 84%] Building C object interface/mmal/vc/CMakeFiles/mmal_vc_diag.dir/mmal_vc_diag.c.o
+[ 84%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/ext_gl_debug_marker.c.o
+[ 84%] Building C object interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_image.c.o
+[ 84%] Linking C executable ../../../../../bin/mmalcam
+[ 84%] Built target mmalcam
+[ 84%] Building C object interface/khronos/CMakeFiles/EGL.dir/common/khrn_int_util.c.o
+[ 84%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/common/khrn_int_image.c.o
+[ 84%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/common/khrn_int_util.c.o
+In file included from /home/pi/Userland/interface/khronos/common/khrn_int_util.c:30:0:
+/home/pi/Userland/interface/khronos/common/khrn_int_util.c: In function ‘khrn_clip_range2’:
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:145:57: warning: assuming signed overflow does not occur when assuming that (X - c) <= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z < x) ? (int32_t)0x7fffffff : z) : ((z > x) ? (int32_t)0x80000000 : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:151:57: warning: assuming signed overflow does not occur when assuming that (X + c) >= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z > x) ? (int32_t)0x80000000 : z) : ((z < x) ? (int32_t)0x7fffffff : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:145:57: warning: assuming signed overflow does not occur when assuming that (X - c) <= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z < x) ? (int32_t)0x7fffffff : z) : ((z > x) ? (int32_t)0x80000000 : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:151:57: warning: assuming signed overflow does not occur when assuming that (X + c) >= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z > x) ? (int32_t)0x80000000 : z) : ((z < x) ? (int32_t)0x7fffffff : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 84%] Linking C executable ../../../../../bin/mmal_vc_diag
+[ 84%] Building C object interface/khronos/CMakeFiles/EGL.dir/common/khrn_options.c.o
+In file included from /home/pi/Userland/interface/khronos/common/khrn_int_util.c:30:0:
+/home/pi/Userland/interface/khronos/common/khrn_int_util.c: In function ‘khrn_clip_range2’:
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:145:57: warning: assuming signed overflow does not occur when assuming that (X - c) <= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z < x) ? (int32_t)0x7fffffff : z) : ((z > x) ? (int32_t)0x80000000 : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:151:57: warning: assuming signed overflow does not occur when assuming that (X + c) >= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z > x) ? (int32_t)0x80000000 : z) : ((z < x) ? (int32_t)0x7fffffff : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:145:57: warning: assuming signed overflow does not occur when assuming that (X - c) <= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z < x) ? (int32_t)0x7fffffff : z) : ((z > x) ? (int32_t)0x80000000 : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/pi/Userland/interface/khronos/common/khrn_int_util.h:151:57: warning: assuming signed overflow does not occur when assuming that (X + c) >= X is always true [-Wstrict-overflow]
+    return (y > 0) ? ((z > x) ? (int32_t)0x80000000 : z) : ((z < x) ? (int32_t)0x7fffffff : z);
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 84%] Built target mmal_vc_diag
+[ 84%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/common/khrn_options.c.o
+[ 85%] Building C object interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_rpc_linux.c.o
+[ 85%] Building C object interface/khronos/CMakeFiles/EGL.dir/common/khrn_client_global_image_map.c.o
+[ 85%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/common/linux/khrn_client_rpc_linux.c.o
+[ 86%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/common/khrn_client_global_image_map.c.o
+[ 86%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/common/linux/khrn_client_platform_linux.c.o
+[ 86%] Building C object interface/khronos/CMakeFiles/EGL.dir/common/linux/khrn_client_platform_linux.c.o
+[ 86%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/vg/vg_int_mat3x3.c.o
+[ 86%] Building C object interface/khronos/CMakeFiles/EGL.dir/vg/vg_int_mat3x3.c.o
+[ 87%] Building C object interface/khronos/CMakeFiles/EGL.dir/vg/vg_client.c.o
+[ 87%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/vg/vg_client.c.o
+[ 88%] Building C object interface/khronos/CMakeFiles/EGL.dir/common/khrn_client.c.o
+[ 88%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/common/khrn_client.c.o
+[ 88%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/egl_openmaxil_client.c.o
+[ 88%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/egl_openmaxil_client.c.o
+[ 88%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_draw_texture_client.c.o
+[ 88%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/gl_oes_draw_texture_client.c.o
+[ 88%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_query_matrix_client.c.o
+[ 88%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/gl_oes_query_matrix_client.c.o
+[ 89%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_framebuffer_object.c.o
+[ 89%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_map_buffer.c.o
+[ 90%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/gl_oes_framebuffer_object.c.o
+[ 90%] Building C object interface/khronos/CMakeFiles/EGL.dir/ext/gl_oes_matrix_palette_client.c.o
+[ 90%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/gl_oes_map_buffer.c.o
+[ 90%] Building C object interface/khronos/CMakeFiles/brcmEGL.dir/ext/gl_oes_matrix_palette_client.c.o
+[ 90%] Linking C shared library ../../../../lib/libEGL.so
+[ 90%] Linking C shared library ../../../../lib/libbrcmEGL.so
+[ 90%] Built target EGL
+Scanning dependencies of target GLESv2
+Scanning dependencies of target OpenVG
+Scanning dependencies of target WFC
+[ 90%] Built target brcmEGL
+Scanning dependencies of target brcmGLESv2
+[ 90%] Building C object interface/khronos/CMakeFiles/GLESv2.dir/glxx/glxx_client.c.o
+[ 90%] Building C object interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_client.c.o
+[ 91%] Building C object interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_stream.c.o
+[ 92%] Building C object interface/khronos/CMakeFiles/brcmGLESv2.dir/glxx/glxx_client.c.o
+[ 92%] Building C object interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client.c.o
+[ 92%] Building C object interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_server_api.c.o
+/home/pi/Userland/interface/khronos/wf/wfc_client_server_api.c:59:22: warning: ‘wfc_client_server_api_send_stream’ defined but not used [-Wunused-function]
+ static VCOS_STATUS_T wfc_client_server_api_send_stream(WFC_IPC_MSG_TYPE msg_type, WFCNativeStreamType stream)
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[ 92%] Building C object interface/khronos/CMakeFiles/WFC.dir/wf/wfc_client_ipc.c.o
+[ 93%] Building C object interface/khronos/CMakeFiles/WFC.dir/common/openwfc/khrn_client_platform_openwfc.c.o
+[ 93%] Linking C shared library ../../../../lib/libWFC.so
+[ 93%] Built target WFC
+[ 93%] Building C object interface/khronos/CMakeFiles/OpenVG.dir/vg/vg_int_mat3x3.c.o
+Scanning dependencies of target brcmOpenVG
+[ 93%] Building C object interface/khronos/CMakeFiles/brcmOpenVG.dir/vg/vg_client.c.o
+[ 93%] Linking C shared library ../../../../lib/libOpenVG.so
+[ 93%] Built target OpenVG
+Scanning dependencies of target brcmWFC
+[ 94%] Building C object interface/khronos/CMakeFiles/brcmWFC.dir/wf/wfc_client_stream.c.o
+[ 94%] Linking C shared library ../../../../lib/libGLESv2.so
+[ 94%] Linking C shared library ../../../../lib/libbrcmGLESv2.so
+[ 94%] Built target GLESv2
+[ 94%] Building C object interface/khronos/CMakeFiles/brcmWFC.dir/wf/wfc_client.c.o
+[ 94%] Built target brcmGLESv2
+[ 94%] Building C object interface/khronos/CMakeFiles/brcmWFC.dir/wf/wfc_client_server_api.c.o
+/home/pi/Userland/interface/khronos/wf/wfc_client_server_api.c:59:22: warning: ‘wfc_client_server_api_send_stream’ defined but not used [-Wunused-function]
+ static VCOS_STATUS_T wfc_client_server_api_send_stream(WFC_IPC_MSG_TYPE msg_type, WFCNativeStreamType stream)
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Scanning dependencies of target vidtex
+[ 95%] Building CXX object host_applications/android/apps/vidtex/CMakeFiles/vidtex.dir/main.cpp.o
+[ 95%] Building C object interface/khronos/CMakeFiles/brcmOpenVG.dir/vg/vg_int_mat3x3.c.o
+[ 95%] Building C object host_applications/android/apps/vidtex/CMakeFiles/vidtex.dir/launcher_rpi.c.o
+[ 95%] Building C object host_applications/android/apps/vidtex/CMakeFiles/vidtex.dir/svp.c.o
+Scanning dependencies of target raspistill
+[ 95%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/RaspiCamControl.c.o
+[ 95%] Building C object host_applications/android/apps/vidtex/CMakeFiles/vidtex.dir/vidtex.c.o
+[ 95%] Building C object interface/khronos/CMakeFiles/brcmWFC.dir/wf/wfc_client_ipc.c.o
+[ 95%] Linking CXX executable ../../../../../../bin/vidtex
+[ 96%] Building C object interface/khronos/CMakeFiles/brcmWFC.dir/common/openwfc/khrn_client_platform_openwfc.c.o
+[ 96%] Built target vidtex
+[ 97%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/RaspiCLI.c.o
+Scanning dependencies of target vcilcs
+[ 97%] Building C object interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs.c.o
+[ 97%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/RaspiPreview.c.o
+[ 97%] Linking C shared library ../../../../lib/libbrcmWFC.so
+[ 97%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/RaspiStill.c.o
+/home/pi/Userland/host_applications/linux/apps/raspicam/RaspiStill.c:50:0: warning: "_GNU_SOURCE" redefined
+ #define _GNU_SOURCE
+ 
+<command-line>:0:0: note: this is the location of the previous definition
+[ 97%] Built target brcmWFC
+[ 97%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/RaspiTex.c.o
+[ 97%] Building C object interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_in.c.o
+[ 97%] Building C object interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_out.c.o
+[ 97%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/RaspiTexUtil.c.o
+[ 97%] Building C object interface/vmcs_host/CMakeFiles/vcilcs.dir/vcilcs_common.c.o
+[ 98%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/tga.c.o
+[ 98%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/gl_scenes/models.c.o
+[ 99%] Linking C static library ../../../../lib/libvcilcs.a
+[ 99%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/gl_scenes/mirror.c.o
+[ 99%] Built target vcilcs
+[ 99%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/gl_scenes/yuv.c.o
+[ 99%] Linking C shared library ../../../../lib/libbrcmOpenVG.so
+[ 99%] Built target brcmOpenVG
+[100%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/gl_scenes/sobel.c.o
+Scanning dependencies of target openmaxil
+[100%] Building C object middleware/openmaxil/CMakeFiles/openmaxil.dir/__/__/host_applications/framework/common/ilcore.c.o
+[100%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/gl_scenes/square.c.o
+[100%] Linking C shared library ../../../../lib/libopenmaxil.so
+[100%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/gl_scenes/vcsm_square.c.o
+[100%] Building C object host_applications/linux/apps/raspicam/CMakeFiles/raspistill.dir/gl_scenes/teapot.c.o
+[100%] Built target openmaxil
+[100%] Linking C executable ../../../../../../bin/raspistill
+[100%] Built target raspistill
+[  3%] Built target vcos
+[  4%] Built target vchiq_arm
+[  4%] Built target vcfiled_check
+[  7%] Built target vchostif
+[  8%] Built target bcm_host
+[ 10%] Built target khrn_client
+[ 16%] Built target brcmEGL
+[ 17%] Built target brcmGLESv2
+[ 18%] Built target vcilcs
+[ 19%] Built target vcfiled
+[ 20%] Built target vcfiled_lock_test
+[ 20%] Built target vchiq_test
+[ 20%] Built target brcmOpenVG
+[ 26%] Built target EGL
+[ 26%] Built target OpenVG
+[ 35%] Built target khrn_static
+[ 36%] Built target GLESv2_static
+[ 38%] Built target brcmWFC
+[ 38%] Built target GLESv2
+[ 45%] Built target EGL_static
+[ 47%] Built target WFC
+[ 48%] Built target vcsm
+[ 50%] Built target mmal_core
+[ 52%] Built target mmal_util
+[ 54%] Built target mmal_vc_client
+[ 59%] Built target containers
+[ 62%] Built target mmal_components
+[ 62%] Built target mmal
+[ 62%] Built target debug_sym
+[ 62%] Built target mmal_vc_diag
+[ 62%] Built target mmal_components_extra
+[ 63%] Built target mmal_omxutil
+[ 65%] Built target mmal_omx
+[ 65%] Built target brcmjpeg
+[ 66%] Built target brcmjpeg_test
+[ 67%] Built target mmal_example_graph
+[ 68%] Built target mmalplay
+[ 68%] Built target mmal_example_basic_1
+[ 68%] Built target mmal_example_connections
+[ 69%] Built target mmalcam
+[ 70%] Built target mmal_example_basic_2
+[ 70%] Built target containers_net_extra
+[ 71%] Built target reader_mp4
+[ 72%] Built target writer_mp4
+[ 73%] Built target reader_ps
+[ 73%] Built target reader_mpga
+[ 73%] Built target reader_binary
+[ 74%] Built target writer_binary
+[ 74%] Built target reader_mkv
+[ 74%] Built target reader_wav
+[ 74%] Built target reader_asf
+[ 75%] Built target writer_asf
+[ 76%] Built target reader_flv
+[ 77%] Built target reader_avi
+[ 77%] Built target writer_avi
+[ 78%] Built target reader_rtp
+[ 79%] Built target reader_rtsp
+[ 79%] Built target reader_rcv
+[ 79%] Built target reader_rv9
+[ 79%] Built target reader_qsynth
+[ 80%] Built target reader_simple
+[ 81%] Built target writer_simple
+[ 82%] Built target reader_raw_video
+[ 82%] Built target writer_raw_video
+[ 82%] Built target writer_dummy
+[ 82%] Built target reader_metadata_id3
+[ 82%] Built target containers_dump_pktfile
+[ 83%] Built target containers_test_bits
+[ 83%] Built target containers_test_uri
+[ 84%] Built target containers_check_frame_int
+[ 84%] Built target containers_stream_server
+[ 84%] Built target containers_test_extra
+[ 84%] Built target containers_test
+[ 85%] Built target containers_datagram_sender
+[ 85%] Built target containers_datagram_receiver
+[ 86%] Built target containers_uri_pipe
+[ 87%] Built target containers_stream_client
+[ 88%] Built target containers_rtp_decoder
+[ 89%] Built target vidtex
+[ 89%] Built target openmaxil
+[ 89%] Built target vcgencmd
+[ 89%] Built target tvservice
+[ 89%] Built target vcmailbox
+[ 90%] Built target raspividyuv
+[ 92%] Built target raspivid
+[ 93%] Built target raspiyuv
+[ 96%] Built target raspistill
+[ 96%] Built target vcsmem
+[ 97%] Built target debug_sym_static
+[ 99%] Built target fdt
+[ 99%] Built target dtovl
+[100%] Built target dtoverlay
+[100%] Built target dtmerge
+Install the project...
+-- Install configuration: "Release"
+-- Up-to-date: /opt/vc/src/hello_pi
+-- Up-to-date: /opt/vc/src/hello_pi/hello_fft
+-- Installing: /opt/vc/src/hello_pi/hello_fft/gpu_fft_trans.h
+-- Installing: /opt/vc/src/hello_pi/hello_fft/gpu_fft_trans.c
+-- Installing: /opt/vc/src/hello_pi/hello_fft/makefile
+-- Installing: /opt/vc/src/hello_pi/hello_fft/gpu_fft_shaders.c
+-- Up-to-date: /opt/vc/src/hello_pi/hello_fft/hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_2k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_128k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_1k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_1024k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_4k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_16k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_2048k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_64k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_32k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_trans.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_256k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_512k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_4096k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_256.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_512.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hex/shader_8k.hex
+-- Installing: /opt/vc/src/hello_pi/hello_fft/gpu_fft_twiddles.c
+-- Installing: /opt/vc/src/hello_pi/hello_fft/mailbox.c
+-- Installing: /opt/vc/src/hello_pi/hello_fft/gpu_fft.h
+-- Installing: /opt/vc/src/hello_pi/hello_fft/gpu_fft_base.c
+-- Up-to-date: /opt/vc/src/hello_pi/hello_fft/qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_4096k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_1024k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_1k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_2048k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_512.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_ex.qinc
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_512k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_2048k.qinc
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_2k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_4k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_16k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft.qinc
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_64k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_256.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_32k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_128k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_8k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_trans.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/qasm/gpu_fft_256k.qasm
+-- Installing: /opt/vc/src/hello_pi/hello_fft/gpu_fft.txt
+-- Installing: /opt/vc/src/hello_pi/hello_fft/gpu_fft.c
+-- Installing: /opt/vc/src/hello_pi/hello_fft/mailbox.h
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hello_fft_2d_bitmap.h
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hello_fft_2d.c
+-- Installing: /opt/vc/src/hello_pi/hello_fft/hello_fft.c
+-- Installing: /opt/vc/src/hello_pi/Makefile.include
+-- Installing: /opt/vc/src/hello_pi/README
+-- Up-to-date: /opt/vc/src/hello_pi/hello_world
+-- Installing: /opt/vc/src/hello_pi/hello_world/world.c
+-- Installing: /opt/vc/src/hello_pi/hello_world/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_world/Makefile
+-- Up-to-date: /opt/vc/src/hello_pi/hello_videocube
+-- Installing: /opt/vc/src/hello_pi/hello_videocube/video.c
+-- Installing: /opt/vc/src/hello_pi/hello_videocube/README.md
+-- Installing: /opt/vc/src/hello_pi/hello_videocube/triangle.c
+-- Installing: /opt/vc/src/hello_pi/hello_videocube/triangle.h
+-- Installing: /opt/vc/src/hello_pi/hello_videocube/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_videocube/Makefile
+-- Installing: /opt/vc/src/hello_pi/hello_videocube/cube_texture_and_coords.h
+-- Up-to-date: /opt/vc/src/hello_pi/hello_font
+-- Installing: /opt/vc/src/hello_pi/hello_font/Vera.ttf
+-- Installing: /opt/vc/src/hello_pi/hello_font/main.c
+-- Installing: /opt/vc/src/hello_pi/hello_font/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_font/Makefile
+-- Up-to-date: /opt/vc/src/hello_pi/libs
+-- Up-to-date: /opt/vc/src/hello_pi/libs/ilclient
+-- Installing: /opt/vc/src/hello_pi/libs/ilclient/ilcore.c
+-- Installing: /opt/vc/src/hello_pi/libs/ilclient/ilclient.c
+-- Installing: /opt/vc/src/hello_pi/libs/ilclient/ilclient.h
+-- Installing: /opt/vc/src/hello_pi/libs/ilclient/Makefile
+-- Up-to-date: /opt/vc/src/hello_pi/libs/vgfont
+-- Installing: /opt/vc/src/hello_pi/libs/vgfont/vgft.h
+-- Installing: /opt/vc/src/hello_pi/libs/vgfont/graphics.c
+-- Installing: /opt/vc/src/hello_pi/libs/vgfont/vgfont.h
+-- Installing: /opt/vc/src/hello_pi/libs/vgfont/graphics_x_private.h
+-- Installing: /opt/vc/src/hello_pi/libs/vgfont/font.c
+-- Installing: /opt/vc/src/hello_pi/libs/vgfont/vgft.c
+-- Installing: /opt/vc/src/hello_pi/libs/vgfont/Makefile
+-- Up-to-date: /opt/vc/src/hello_pi/hello_dispmanx
+-- Installing: /opt/vc/src/hello_pi/hello_dispmanx/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_dispmanx/Makefile
+-- Installing: /opt/vc/src/hello_pi/hello_dispmanx/dispmanx.c
+-- Up-to-date: /opt/vc/src/hello_pi/hello_teapot
+-- Installing: /opt/vc/src/hello_pi/hello_teapot/models.c
+-- Installing: /opt/vc/src/hello_pi/hello_teapot/video.c
+-- Installing: /opt/vc/src/hello_pi/hello_teapot/README.md
+-- Installing: /opt/vc/src/hello_pi/hello_teapot/triangle.c
+-- Installing: /opt/vc/src/hello_pi/hello_teapot/models.h
+-- Installing: /opt/vc/src/hello_pi/hello_teapot/teapot.obj.dat
+-- Installing: /opt/vc/src/hello_pi/hello_teapot/triangle.h
+-- Installing: /opt/vc/src/hello_pi/hello_teapot/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_teapot/Makefile
+-- Installing: /opt/vc/src/hello_pi/hello_teapot/cube_texture_and_coords.h
+-- Up-to-date: /opt/vc/src/hello_pi/hello_triangle
+-- Installing: /opt/vc/src/hello_pi/hello_triangle/Djenne_128_128.raw
+-- Installing: /opt/vc/src/hello_pi/hello_triangle/triangle.c
+-- Installing: /opt/vc/src/hello_pi/hello_triangle/Gaudi_128_128.raw
+-- Installing: /opt/vc/src/hello_pi/hello_triangle/Lucca_128_128.raw
+-- Installing: /opt/vc/src/hello_pi/hello_triangle/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_triangle/Makefile
+-- Installing: /opt/vc/src/hello_pi/hello_triangle/cube_texture_and_coords.h
+-- Up-to-date: /opt/vc/src/hello_pi/hello_jpeg
+-- Installing: /opt/vc/src/hello_pi/hello_jpeg/jpeg.h
+-- Installing: /opt/vc/src/hello_pi/hello_jpeg/jpeg.c
+-- Installing: /opt/vc/src/hello_pi/hello_jpeg/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_jpeg/Makefile
+-- Up-to-date: /opt/vc/src/hello_pi/hello_audio
+-- Installing: /opt/vc/src/hello_pi/hello_audio/sinewave.c
+-- Installing: /opt/vc/src/hello_pi/hello_audio/audioplay.h
+-- Installing: /opt/vc/src/hello_pi/hello_audio/audio.c
+-- Installing: /opt/vc/src/hello_pi/hello_audio/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_audio/Makefile
+-- Installing: /opt/vc/src/hello_pi/rebuild.sh
+-- Up-to-date: /opt/vc/src/hello_pi/hello_mmal_encode
+-- Installing: /opt/vc/src/hello_pi/hello_mmal_encode/mmal_encode.c
+-- Installing: /opt/vc/src/hello_pi/hello_mmal_encode/Makefile
+-- Up-to-date: /opt/vc/src/hello_pi/hello_triangle2
+-- Installing: /opt/vc/src/hello_pi/hello_triangle2/triangle2.c
+-- Installing: /opt/vc/src/hello_pi/hello_triangle2/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_triangle2/Makefile
+-- Up-to-date: /opt/vc/src/hello_pi/hello_encode
+-- Installing: /opt/vc/src/hello_pi/hello_encode/encode.c
+-- Installing: /opt/vc/src/hello_pi/hello_encode/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_encode/Makefile
+-- Up-to-date: /opt/vc/src/hello_pi/hello_tiger
+-- Installing: /opt/vc/src/hello_pi/hello_tiger/tiger.h
+-- Installing: /opt/vc/src/hello_pi/hello_tiger/readme.txt
+-- Installing: /opt/vc/src/hello_pi/hello_tiger/main.c
+-- Installing: /opt/vc/src/hello_pi/hello_tiger/tiger.c
+-- Installing: /opt/vc/src/hello_pi/hello_tiger/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_tiger/Makefile
+-- Installing: /opt/vc/src/hello_pi/hello_tiger/license.txt
+-- Up-to-date: /opt/vc/src/hello_pi/hello_video
+-- Installing: /opt/vc/src/hello_pi/hello_video/test.h264
+-- Installing: /opt/vc/src/hello_pi/hello_video/video.c
+-- Installing: /opt/vc/src/hello_pi/hello_video/README
+-- Installing: /opt/vc/src/hello_pi/hello_video/CMakeLists.txt
+-- Installing: /opt/vc/src/hello_pi/hello_video/Makefile
+-- Installing: /opt/vc/src/hello_pi/CMakeLists.txt
+-- Up-to-date: /opt/vc/include/interface/vcos
+-- Installing: /opt/vc/include/interface/vcos/vcos_inttypes.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_isr.h
+-- Up-to-date: /opt/vc/include/interface/vcos/pthreads
+-- Installing: /opt/vc/include/interface/vcos/pthreads/vcos_platform_types.h
+-- Installing: /opt/vc/include/interface/vcos/pthreads/vcos_platform.h
+-- Installing: /opt/vc/include/interface/vcos/pthreads/vcos_futex_mutex.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_cfg.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_ctype.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_thread_attr.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_mutex.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_timer.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_stdbool.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_once.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_queue.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_mutexes_are_reentrant.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_latch_from_sem.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_generic_event_flags.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_generic_quickslow_mutex.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_generic_reentrant_mtx.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_thread_reaper.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_joinable_thread_from_plain.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_deprecated.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_generic_tls.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_generic_blockpool.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_mem_from_malloc.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_common.h
+-- Installing: /opt/vc/include/interface/vcos/generic/vcos_generic_named_sem.h
+-- Installing: /opt/vc/include/interface/vcos/ultibo
+-- Installing: /opt/vc/include/interface/vcos/ultibo/netinet
+-- Installing: /opt/vc/include/interface/vcos/ultibo/netinet/in.h
+-- Installing: /opt/vc/include/interface/vcos/ultibo/netdb.h
+-- Installing: /opt/vc/include/interface/vcos/ultibo/vcos_platform_types.h
+-- Installing: /opt/vc/include/interface/vcos/ultibo/vcos_platform.h
+-- Installing: /opt/vc/include/interface/vcos/ultibo/sys
+-- Installing: /opt/vc/include/interface/vcos/ultibo/sys/statfs.h
+-- Installing: /opt/vc/include/interface/vcos/ultibo/sys/dirent.h
+-- Installing: /opt/vc/include/interface/vcos/ultibo/sys/socket.h
+-- Installing: /opt/vc/include/interface/vcos/ultibo/netinet6
+-- Installing: /opt/vc/include/interface/vcos/ultibo/netinet6/in6.h
+-- Installing: /opt/vc/include/interface/vcos/ultibo/vcos_futex_mutex.h
+-- Installing: /opt/vc/include/interface/vcos/ultibo/arpa
+-- Installing: /opt/vc/include/interface/vcos/ultibo/arpa/inet.h
+-- Installing: /opt/vc/include/interface/vcos/ultibo/semaphore.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_mem.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_msgqueue.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_logging_control.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_init.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_mempool.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_event_flags.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_tls.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_string.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_thread.h
+-- Installing: /opt/vc/include/interface/vcos/vcos.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_quickslow_mutex.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_build_info.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_types.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_assert.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_named_semaphore.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_semaphore.h
+-- Installing: /opt/vc/include/interface/vcos/user_nodefs.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_dlfcn.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_logging.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_legacy_isr.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_cmd.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_attr.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_reentrant_mutex.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_event.h
+-- Installing: /opt/vc/include/interface/vcos/glibc
+-- Installing: /opt/vc/include/interface/vcos/vcos_atomic_flags.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_blockpool.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_lowlevel_thread.h
+-- Installing: /opt/vc/include/interface/vcos/vcos_stdint.h
+-- Up-to-date: /opt/vc/include/interface/vchiq_arm
+-- Installing: /opt/vc/include/interface/vchiq_arm/vchiq_ioctl.h
+-- Installing: /opt/vc/include/interface/vchiq_arm/vchiq_test.h
+-- Installing: /opt/vc/include/interface/vchiq_arm/vchiq_util.h
+-- Installing: /opt/vc/include/interface/vchiq_arm/vchiq_test_if.h
+-- Installing: /opt/vc/include/interface/vchiq_arm/vchiq_if.h
+-- Installing: /opt/vc/include/interface/vchiq_arm/vchiq.h
+-- Installing: /opt/vc/include/interface/vchiq_arm/vchiq_cfg.h
+-- Up-to-date: /opt/vc/include/interface/vchi
+-- Installing: /opt/vc/include/interface/vchi/vchi.h
+-- Installing: /opt/vc/include/interface/vchi/vchi_cfg.h
+-- Installing: /opt/vc/include/interface/vchi/vchi_mh.h
+-- Up-to-date: /opt/vc/include/interface/vchi/common
+-- Installing: /opt/vc/include/interface/vchi/common/endian.h
+-- Up-to-date: /opt/vc/include/interface/vchi/connections
+-- Installing: /opt/vc/include/interface/vchi/connections/connection.h
+-- Installing: /opt/vc/include/interface/vchi/vchi_cfg_internal.h
+-- Up-to-date: /opt/vc/include/interface/vchi/message_drivers
+-- Installing: /opt/vc/include/interface/vchi/message_drivers/message.h
+-- Installing: /opt/vc/include/interface/vchi/vchi_common.h
+-- Up-to-date: /opt/vc/include/interface/vctypes
+-- Installing: /opt/vc/include/interface/vctypes/vc_display_types.h
+-- Installing: /opt/vc/include/interface/vctypes/vc_image_types.h
+-- Installing: /opt/vc/include/interface/vctypes/vc_image_structs.h
+-- Up-to-date: /opt/vc/include/vcinclude
+-- Installing: /opt/vc/include/vcinclude/vc_image_types.h
+-- Installing: /opt/vc/include/vcinclude/common.h
+-- Installing: /opt/vc/include/vcinclude/vcore.h
+-- Installing: /opt/vc/include/interface/peer
+-- Installing: /opt/vc/include/interface/peer/vc_vchi_dispmanx_common.h
+-- Up-to-date: /opt/vc/include/interface/vmcs_host
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_vchi_filesys.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vcfilesys_defs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_tvservice_defs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_gencmd_defs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vcilcs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_cecservice_defs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_dispmanx.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_service_common.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vcilcs_common.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_cec.h
+-- Installing: /opt/vc/include/interface/vmcs_host/ultibo
+-- Installing: /opt/vc/include/interface/vmcs_host/ultibo/vchost_config.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_imageconv_defs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_vchi_fileservice_defs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_vchi_bufman_defs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vcgencmd.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_hdmi.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vchost.h
+-- Up-to-date: /opt/vc/include/interface/vmcs_host/khronos
+-- Up-to-date: /opt/vc/include/interface/vmcs_host/khronos/IL
+-- Installing: /opt/vc/include/interface/vmcs_host/khronos/IL/OMX_Image.h
+-- Installing: /opt/vc/include/interface/vmcs_host/khronos/IL/OMX_ILCS.h
+-- Installing: /opt/vc/include/interface/vmcs_host/khronos/IL/OMX_Types.h
+-- Installing: /opt/vc/include/interface/vmcs_host/khronos/IL/OMX_Component.h
+-- Installing: /opt/vc/include/interface/vmcs_host/khronos/IL/OMX_Core.h
+-- Installing: /opt/vc/include/interface/vmcs_host/khronos/IL/OMX_Broadcom.h
+-- Installing: /opt/vc/include/interface/vmcs_host/khronos/IL/OMX_Video.h
+-- Installing: /opt/vc/include/interface/vmcs_host/khronos/IL/OMX_Audio.h
+-- Installing: /opt/vc/include/interface/vmcs_host/khronos/IL/OMX_Other.h
+-- Installing: /opt/vc/include/interface/vmcs_host/khronos/IL/OMX_Index.h
+-- Installing: /opt/vc/include/interface/vmcs_host/khronos/IL/OMX_IVCommon.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_vchi_audioserv_defs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_fileservice_defs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_cecservice.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_vchi_bufman.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_hdmi_property.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vcfilesys.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_ilcs_defs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_cma.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_vchi_dispmanx.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_vchi_gencmd.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_sdtv.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_dispservice_defs.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_dispservice_x_defs.h
+-- Up-to-date: /opt/vc/include/interface/vmcs_host/linux
+-- Installing: /opt/vc/include/interface/vmcs_host/linux/vchost_config.h
+-- Up-to-date: /opt/vc/include/interface/vmcs_host/linux/vcfiled
+-- Installing: /opt/vc/include/interface/vmcs_host/linux/vcfiled/etc
+-- Installing: /opt/vc/include/interface/vmcs_host/linux/vcfiled/etc/init.d
+-- Installing: /opt/vc/include/interface/vmcs_host/linux/vcfiled/vcfiled_check.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vchost_platform_config.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_vchi_gpuserv.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_dispmanx_types.h
+-- Installing: /opt/vc/include/interface/vmcs_host/vc_tvservice.h
+-- Up-to-date: /opt/vc/include
+-- Up-to-date: /opt/vc/include/VG
+-- Installing: /opt/vc/include/VG/openvg.h
+-- Installing: /opt/vc/include/VG/vgplatform.h
+-- Installing: /opt/vc/include/VG/vgu.h
+-- Installing: /opt/vc/include/VG/vgext.h
+-- Up-to-date: /opt/vc/include/GLES2
+-- Installing: /opt/vc/include/GLES2/gl2ext.h
+-- Installing: /opt/vc/include/GLES2/gl2.h
+-- Installing: /opt/vc/include/GLES2/gl2platform.h
+-- Up-to-date: /opt/vc/include/EGL
+-- Installing: /opt/vc/include/EGL/egl.h
+-- Installing: /opt/vc/include/EGL/eglext_brcm.h
+-- Installing: /opt/vc/include/EGL/eglplatform.h
+-- Installing: /opt/vc/include/EGL/eglext_nvidia.h
+-- Installing: /opt/vc/include/EGL/eglext_android.h
+-- Installing: /opt/vc/include/EGL/eglext.h
+-- Up-to-date: /opt/vc/include/WF
+-- Installing: /opt/vc/include/WF/wfc.h
+-- Installing: /opt/vc/include/WF/wfcplatform.h
+-- Up-to-date: /opt/vc/include/KHR
+-- Installing: /opt/vc/include/KHR/khrplatform.h
+-- Up-to-date: /opt/vc/include/GLES
+-- Installing: /opt/vc/include/GLES/glplatform.h
+-- Installing: /opt/vc/include/GLES/glext.h
+-- Installing: /opt/vc/include/GLES/gl.h
+-- Up-to-date: /opt/vc/include/IL
+-- Installing: /opt/vc/include/IL/OMX_Image.h
+-- Installing: /opt/vc/include/IL/OMX_ILCS.h
+-- Installing: /opt/vc/include/IL/OMX_Types.h
+-- Installing: /opt/vc/include/IL/OMX_Component.h
+-- Installing: /opt/vc/include/IL/OMX_Core.h
+-- Installing: /opt/vc/include/IL/OMX_Broadcom.h
+-- Installing: /opt/vc/include/IL/OMX_Video.h
+-- Installing: /opt/vc/include/IL/OMX_Audio.h
+-- Installing: /opt/vc/include/IL/OMX_Other.h
+-- Installing: /opt/vc/include/IL/OMX_Index.h
+-- Installing: /opt/vc/include/IL/OMX_IVCommon.h
+-- Up-to-date: /opt/vc/include
+-- Installing: /opt/vc/include/bcm_host.h
+-- Installing: /opt/vc/lib/pkgconfig/bcm_host.pc
+-- Installing: /opt/vc/lib/pkgconfig/egl.pc
+-- Installing: /opt/vc/lib/pkgconfig/glesv2.pc
+-- Installing: /opt/vc/lib/pkgconfig/vg.pc
+-- Installing: /opt/vc/lib/pkgconfig/brcmegl.pc
+-- Installing: /opt/vc/lib/pkgconfig/brcmglesv2.pc
+-- Installing: /opt/vc/lib/pkgconfig/brcmvg.pc
+-- Installing: /opt/vc/lib/pkgconfig/vcsm.pc
+-- Installing: /opt/vc/lib/pkgconfig/mmal.pc
+-- Installing: /opt/vc/lib/libvcos.so
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_common.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_generic_blockpool.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_generic_event_flags.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_generic_named_sem.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_generic_quickslow_mutex.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_generic_reentrant_mtx.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_generic_tls.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_joinable_thread_from_plain.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_latch_from_sem.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_mem_from_malloc.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_mutexes_are_reentrant.h
+-- Up-to-date: /opt/vc/include/interface/vcos/generic/vcos_thread_reaper.h
+-- Installing: /opt/vc/lib/libvchostif.a
+-- Installing: /opt/vc/lib/libvcilcs.a
+-- Installing: /opt/vc/sbin/vcfiled
+-- Set runtime path of "/opt/vc/sbin/vcfiled" to ""
+-- Installing: /etc/init.d/vcfiled
+-- Installing: /opt/vc/share/install/vcfiled
+-- Installing: /opt/vc/lib/libvcfiled_check.a
+-- Installing: /opt/vc/lib/libvchiq_arm.so
+-- Set runtime path of "/opt/vc/lib/libvchiq_arm.so" to ""
+-- Installing: /opt/vc/bin/vchiq_test
+-- Set runtime path of "/opt/vc/bin/vchiq_test" to ""
+-- Installing: /opt/vc/lib/libEGL.so
+-- Set runtime path of "/opt/vc/lib/libEGL.so" to ""
+-- Installing: /opt/vc/lib/libGLESv2.so
+-- Set runtime path of "/opt/vc/lib/libGLESv2.so" to ""
+-- Installing: /opt/vc/lib/libOpenVG.so
+-- Set runtime path of "/opt/vc/lib/libOpenVG.so" to ""
+-- Installing: /opt/vc/lib/libWFC.so
+-- Set runtime path of "/opt/vc/lib/libWFC.so" to ""
+-- Installing: /opt/vc/lib/libkhrn_client.a
+-- Installing: /opt/vc/lib/libEGL_static.a
+-- Installing: /opt/vc/lib/libGLESv2_static.a
+-- Installing: /opt/vc/lib/libkhrn_static.a
+-- Installing: /opt/vc/lib/libbrcmEGL.so
+-- Set runtime path of "/opt/vc/lib/libbrcmEGL.so" to ""
+-- Installing: /opt/vc/lib/libbrcmGLESv2.so
+-- Set runtime path of "/opt/vc/lib/libbrcmGLESv2.so" to ""
+-- Installing: /opt/vc/lib/libbrcmOpenVG.so
+-- Set runtime path of "/opt/vc/lib/libbrcmOpenVG.so" to ""
+-- Installing: /opt/vc/lib/libbrcmWFC.so
+-- Set runtime path of "/opt/vc/lib/libbrcmWFC.so" to ""
+-- Installing: /opt/vc/lib/libmmal.so
+-- Set runtime path of "/opt/vc/lib/libmmal.so" to ""
+-- Installing: /opt/vc/include/interface/mmal/mmal.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_buffer.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_clock.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_common.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_component.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_encodings.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_events.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_format.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_logging.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_metadata.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_parameters.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_parameters_audio.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_parameters_camera.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_parameters_clock.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_parameters_common.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_parameters_video.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_pool.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_port.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_queue.h
+-- Installing: /opt/vc/include/interface/mmal/mmal_types.h
+-- Installing: /opt/vc/lib/libmmal_core.so
+-- Set runtime path of "/opt/vc/lib/libmmal_core.so" to ""
+-- Installing: /opt/vc/include/interface/mmal/core/mmal_buffer_private.h
+-- Installing: /opt/vc/include/interface/mmal/core/mmal_clock_private.h
+-- Installing: /opt/vc/include/interface/mmal/core/mmal_component_private.h
+-- Installing: /opt/vc/include/interface/mmal/core/mmal_core_private.h
+-- Installing: /opt/vc/include/interface/mmal/core/mmal_port_private.h
+-- Installing: /opt/vc/include/interface/mmal/core/mmal_events_private.h
+-- Installing: /opt/vc/lib/libmmal_util.so
+-- Set runtime path of "/opt/vc/lib/libmmal_util.so" to ""
+-- Installing: /opt/vc/include/interface/mmal/util/mmal_component_wrapper.h
+-- Installing: /opt/vc/include/interface/mmal/util/mmal_connection.h
+-- Installing: /opt/vc/include/interface/mmal/util/mmal_default_components.h
+-- Installing: /opt/vc/include/interface/mmal/util/mmal_graph.h
+-- Installing: /opt/vc/include/interface/mmal/util/mmal_il.h
+-- Installing: /opt/vc/include/interface/mmal/util/mmal_list.h
+-- Installing: /opt/vc/include/interface/mmal/util/mmal_param_convert.h
+-- Installing: /opt/vc/include/interface/mmal/util/mmal_util.h
+-- Installing: /opt/vc/include/interface/mmal/util/mmal_util_params.h
+-- Installing: /opt/vc/include/interface/mmal/util/mmal_util_rational.h
+-- Installing: /opt/vc/bin/mmal_vc_diag
+-- Set runtime path of "/opt/vc/bin/mmal_vc_diag" to ""
+-- Installing: /opt/vc/lib/libmmal_vc_client.so
+-- Set runtime path of "/opt/vc/lib/libmmal_vc_client.so" to ""
+-- Installing: /opt/vc/include/interface/mmal/vc/mmal_vc_api.h
+-- Installing: /opt/vc/include/interface/mmal/vc/mmal_vc_api_drm.h
+-- Installing: /opt/vc/include/interface/mmal/vc/mmal_vc_client_priv.h
+-- Installing: /opt/vc/include/interface/mmal/vc/mmal_vc_msgnames.h
+-- Installing: /opt/vc/include/interface/mmal/vc/mmal_vc_msgs.h
+-- Installing: /opt/vc/include/interface/mmal/vc/mmal_vc_opaque_alloc.h
+-- Installing: /opt/vc/include/interface/mmal/vc/mmal_vc_shm.h
+-- Installing: /opt/vc/lib/libmmal_components.so
+-- Set runtime path of "/opt/vc/lib/libmmal_components.so" to ""
+-- Installing: /opt/vc/lib/libcontainers.so
+-- Set runtime path of "/opt/vc/lib/libcontainers.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_mp4.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_mp4.so" to ""
+-- Installing: /opt/vc/lib/plugins/writer_mp4.so
+-- Set runtime path of "/opt/vc/lib/plugins/writer_mp4.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_ps.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_ps.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_mpga.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_mpga.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_binary.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_binary.so" to ""
+-- Installing: /opt/vc/lib/plugins/writer_binary.so
+-- Set runtime path of "/opt/vc/lib/plugins/writer_binary.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_mkv.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_mkv.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_wav.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_wav.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_asf.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_asf.so" to ""
+-- Installing: /opt/vc/lib/plugins/writer_asf.so
+-- Set runtime path of "/opt/vc/lib/plugins/writer_asf.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_flv.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_flv.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_avi.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_avi.so" to ""
+-- Installing: /opt/vc/lib/plugins/writer_avi.so
+-- Set runtime path of "/opt/vc/lib/plugins/writer_avi.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_rtp.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_rtp.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_rtsp.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_rtsp.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_rcv.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_rcv.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_rv9.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_rv9.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_qsynth.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_qsynth.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_simple.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_simple.so" to ""
+-- Installing: /opt/vc/lib/plugins/writer_simple.so
+-- Set runtime path of "/opt/vc/lib/plugins/writer_simple.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_raw_video.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_raw_video.so" to ""
+-- Installing: /opt/vc/lib/plugins/writer_raw_video.so
+-- Set runtime path of "/opt/vc/lib/plugins/writer_raw_video.so" to ""
+-- Installing: /opt/vc/lib/plugins/writer_dummy.so
+-- Set runtime path of "/opt/vc/lib/plugins/writer_dummy.so" to ""
+-- Installing: /opt/vc/lib/plugins/reader_metadata_id3.so
+-- Set runtime path of "/opt/vc/lib/plugins/reader_metadata_id3.so" to ""
+-- Installing: /opt/vc/bin/containers_test
+-- Set runtime path of "/opt/vc/bin/containers_test" to ""
+-- Installing: /opt/vc/bin/containers_check_frame_int
+-- Set runtime path of "/opt/vc/bin/containers_check_frame_int" to ""
+-- Installing: /opt/vc/bin/containers_stream_client
+-- Set runtime path of "/opt/vc/bin/containers_stream_client" to ""
+-- Installing: /opt/vc/bin/containers_stream_server
+-- Set runtime path of "/opt/vc/bin/containers_stream_server" to ""
+-- Installing: /opt/vc/bin/containers_datagram_sender
+-- Set runtime path of "/opt/vc/bin/containers_datagram_sender" to ""
+-- Installing: /opt/vc/bin/containers_datagram_receiver
+-- Set runtime path of "/opt/vc/bin/containers_datagram_receiver" to ""
+-- Installing: /opt/vc/bin/containers_rtp_decoder
+-- Set runtime path of "/opt/vc/bin/containers_rtp_decoder" to ""
+-- Installing: /opt/vc/bin/containers_test_uri
+-- Set runtime path of "/opt/vc/bin/containers_test_uri" to ""
+-- Installing: /opt/vc/bin/containers_uri_pipe
+-- Set runtime path of "/opt/vc/bin/containers_uri_pipe" to ""
+-- Installing: /opt/vc/bin/containers_test_bits
+-- Set runtime path of "/opt/vc/bin/containers_test_bits" to ""
+-- Installing: /opt/vc/bin/containers_dump_pktfile
+-- Installing: /opt/vc/lib/libopenmaxil.so
+-- Set runtime path of "/opt/vc/lib/libopenmaxil.so" to ""
+-- Installing: /opt/vc/lib/libbcm_host.so
+-- Set runtime path of "/opt/vc/lib/libbcm_host.so" to ""
+-- Installing: /opt/vc/bin/vcgencmd
+-- Set runtime path of "/opt/vc/bin/vcgencmd" to ""
+-- Installing: /opt/vc/bin/tvservice
+-- Set runtime path of "/opt/vc/bin/tvservice" to ""
+-- Installing: /opt/vc/bin/vcmailbox
+-- Set runtime path of "/opt/vc/bin/vcmailbox" to ""
+-- Installing: /opt/vc/bin/raspistill
+-- Set runtime path of "/opt/vc/bin/raspistill" to ""
+-- Installing: /opt/vc/bin/raspiyuv
+-- Set runtime path of "/opt/vc/bin/raspiyuv" to ""
+-- Installing: /opt/vc/bin/raspivid
+-- Set runtime path of "/opt/vc/bin/raspivid" to ""
+-- Installing: /opt/vc/bin/raspividyuv
+-- Set runtime path of "/opt/vc/bin/raspividyuv" to ""
+-- Installing: /opt/vc/lib/libvcsm.so
+-- Set runtime path of "/opt/vc/lib/libvcsm.so" to ""
+-- Installing: /opt/vc/include/interface/vcsm/user-vcsm.h
+-- Installing: /opt/vc/bin/vcsmem
+-- Set runtime path of "/opt/vc/bin/vcsmem" to ""
+-- Installing: /opt/vc/lib/libdebug_sym.so
+-- Installing: /opt/vc/lib/libdebug_sym_static.a
+-- Installing: /opt/vc/bin/dtoverlay
+-- Set runtime path of "/opt/vc/bin/dtoverlay" to ""
+-- Up-to-date: /opt/vc/bin/dtparam
+-- Installing: /opt/vc/bin/dtoverlay-pre
+-- Installing: /opt/vc/bin/dtoverlay-post
+-- Installing: /opt/vc/bin/dtmerge
+-- Set runtime path of "/opt/vc/bin/dtmerge" to ""
+-- Installing: /opt/vc/lib/libdtovl.so
+~/Userland
