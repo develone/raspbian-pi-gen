@@ -1,0 +1,15 @@
+root@sim2:/var/www/html/raspbian# reprepro -Vb . includedeb stretch /home/vidal/local-apt-repo/*
+root@sim2:/var/www/html/raspbian#conf/distributions
+
+Origin: Raspbian
+Label: Raspbian
+Suite: stable
+Codename: stretch
+Architectures: armhf
+Components: main contrib non-free rpi firmware
+Description: Debian armhf testing distribution for Raspberry Pi 
+#Update: debian non-US security
+#SignWith: yes
+
+
+ 

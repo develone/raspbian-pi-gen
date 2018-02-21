@@ -12,4 +12,7 @@ tcl-dev
 telnet
 tftp
 hexedit
+cmake
+flex
+bison
 
