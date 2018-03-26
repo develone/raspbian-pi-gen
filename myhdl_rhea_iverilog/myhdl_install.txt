@@ -1,0 +1,35 @@
+install gktwave, iverilog myhdl & rhea 
+
+sudo apt-get install gtkwave
+sudo apt-get install iverilog
+
+sudo pip install -U pytest
+
+git clone https://github.com/develone/myhdl.git
+cd myhdl
+commit a311468f631094bb1a013612cc20c0f7583721b9
+Merge: b210708 042c76a
+Author: jandecaluwe <jan@jandecaluwe.com>
+Date:   Sat Mar 17 18:13:48 2018 +0100
+
+    Merge pull request #257 from NicoPy/patch-8
+    
+    intbv.unsigned() internal enhancement
+sudo python setup.py install
+Author: Nick Shaffner <nshaffner@gmail.com>
+Date:   Tue Aug 16 04:10:14 2016 -0700
+
+    Remove phantom warnings in verilog conversion related to Xilinx device_clock_mgmt_prim (#54)
+    
+    * Remove phantom warnings related to Xilinx device_clock_mgmt_prim
+    
+    * Also removed phantom conversion warning about clockin not being read
+
+git clone https://github.com/develone/rhea.git
+
+sudo python setup.py install
+
+cd rhea/examples/boards/catboard
+python test_catboard_blinky_host.py
+ls output/
+catboard_blinky_host.v  tb_catboard_blinky_host.v  vcd
