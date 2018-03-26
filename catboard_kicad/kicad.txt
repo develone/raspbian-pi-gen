@@ -1,0 +1,7 @@
+The schmatic & pcb artwork for the CATBOARD were created with Kicad.
+ 
+git clone https://github.com/develone/CAT-Board.git
+sudo apt-get install kicad
+http://kicad-pcb.org/help/tutorials/
+All of the files to build a CATBOARD are 
+https://github.com/develone/CAT-Board/tree/master/docs/Manual/pics
