@@ -100,3 +100,68 @@ Setting output to high
 1
 Checking DONE pin
 1
+
+pi@pi3-2:~/myhdl/cosimulation/icarus $ make
+Creates myhdl.vpi
+
+pi@pi3-2:~/myhdl/cosimulation/icarus $ ls
+Makefile          myhdl.c           myhdl.o        myhdl_table.o  README.txt
+myhdl_20030518.c  myhdl.c.20030518  myhdl_table.c  myhdl.vpi      test
+pi@pi3-2:~/myhdl/cosimulation/icarus $ less README.txt
+
+
+pi@pi3-2:~/raspbian-pi-gen/myhdl_rhea_iverilog $ cp ~/myhdl/cosimulation/icarus/myhdl.vpi .
+
+pi@pi3-2:~ $ git clone https://gist.github.com/e5bdbabf8842c5aa0b48c6983492cc9e.git
+Cloning into 'e5bdbabf8842c5aa0b48c6983492cc9e'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (6/6), done.
+Unpacking objects: 100% (6/6), done.
+remote: Total 6 (delta 0), reused 6 (delta 0), pack-reused 0
+pi@pi3-2:~ $ cd e5bdbabf8842c5aa0b48c6983492cc9e/
+pi@pi3-2:~/e5bdbabf8842c5aa0b48c6983492cc9e $ ls
+counter_test.py  counter_top.v  counter.v  README.md
+pi@pi3-2:~/e5bdbabf8842c5aa0b48c6983492cc9e $ cp ~/myhdl/cosimulation/icarus/myhdl.vpi .
+pi@pi3-2:~/e5bdbabf8842c5aa0b48c6983492cc9e $ python counter_test.py 
+VCD info: dumpfile counter_top.vcd opened for output.
+('from checker, time=', 5, ' q=', Signal(intbv(0L)))
+from counter module, t= 5002, q= 0
+('from checker, time=', 15, ' q=', Signal(intbv(1)))
+from counter module, t=15002, q= 1
+('from checker, time=', 25, ' q=', Signal(intbv(2)))
+from counter module, t=25002, q= 2
+('from checker, time=', 35, ' q=', Signal(intbv(3)))
+from counter module, t=35002, q= 3
+('from checker, time=', 45, ' q=', Signal(intbv(4)))
+from counter module, t=45002, q= 4
+('from checker, time=', 55, ' q=', Signal(intbv(5)))
+from counter module, t=55002, q= 5
+('from checker, time=', 65, ' q=', Signal(intbv(6)))
+from counter module, t=65002, q= 6
+('from checker, time=', 75, ' q=', Signal(intbv(7)))
+from counter module, t=75002, q= 7
+('from checker, time=', 85, ' q=', Signal(intbv(8)))
+from counter module, t=85002, q= 8
+('from checker, time=', 95, ' q=', Signal(intbv(9)))
+from counter module, t=95002, q= 9
+('from checker, time=', 105, ' q=', Signal(intbv(10)))
+from counter module, t=105002, q=10
+('from checker, time=', 115, ' q=', Signal(intbv(11)))
+from counter module, t=115002, q=11
+('from checker, time=', 125, ' q=', Signal(intbv(12)))
+from counter module, t=125002, q=12
+('from checker, time=', 135, ' q=', Signal(intbv(13)))
+from counter module, t=135002, q=13
+('from checker, time=', 145, ' q=', Signal(intbv(14)))
+from counter module, t=145002, q=14
+('from checker, time=', 155, ' q=', Signal(intbv(15)))
+from counter module, t=155002, q=15
+('from checker, time=', 165, ' q=', Signal(intbv(0)))
+from counter module, t=165002, q= 0
+('from checker, time=', 175, ' q=', Signal(intbv(1)))
+from counter module, t=175002, q= 1
+('from checker, time=', 185, ' q=', Signal(intbv(2)))
+from counter module, t=185002, q= 2
+('from checker, time=', 195, ' q=', Signal(intbv(3)))
+from counter module, t=195002, q= 3
+<class 'myhdl._SuspendSimulation'>: Simulated 200 timesteps

@@ -1,7 +1,31 @@
 The schmatic & pcb artwork for the CATBOARD were created with Kicad.
- 
+The following repository were forks  
 git clone https://github.com/develone/CAT-Board.git
+git clone https://github.com/develone/KiCad-Schematic-Symbol-Libraries.git
+
+I was getting and error in Cypress_cy8c5xlp.lib compoeent load error 
+error <invalid field header> occurred line 707.
+
+git clone https://github.com/develone/KiPart.git
+cd KiPart/
+sudo python setup.py install
+cd ~/
+mkdir testkipart
+cd testkipart
+cp -R ~/KiCad-Schematic-Symbol-Libraries/cypress/ .
+
+pi@pi3-2:~/testkipart/cypress $ make
+kipart CY8C5XLP.csv -r psoc5lp -b -s name -o Cypress_cy8c5xlp.lib -w
+mv -f Cypress_cy8c5xlp.lib ..
+
+cd ../
+cp Cypress_cy8c5xlp.lib ~/KiCad-Schematic-Symbol-Libraries/
+
 sudo apt-get install kicad
 http://kicad-pcb.org/help/tutorials/
+
 All of the files to build a CATBOARD are 
 https://github.com/develone/CAT-Board/tree/master/docs/Manual/pics
+
+pi@pi3-2:~ $ cd CAT-Board/pcb/
+pi@pi3-2:~/CAT-Board/pcb $ kicad CAT.pro

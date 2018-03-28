@@ -33,3 +33,6 @@ cd rhea/examples/boards/catboard
 python test_catboard_blinky_host.py
 ls output/
 catboard_blinky_host.v  tb_catboard_blinky_host.v  vcd
+
+pi@pi3-2:~/myhdl/example/uart_tx $ python uart_tx.py
+pi@pi3-2:~/myhdl/example/uart_tx $ gtkwave tb.vcd
