@@ -1,0 +1,10 @@
+Sun  1 Apr 18:10:01 UTC 2018
+Sun  1 Apr 18:14:57 UTC 2018
+-rwxr-xr-x 1 root staff 624304 Apr  1 18:15 /usr/local/bin/arachne-pnr
+total 23036
+drwxr-sr-x  2 root staff     4096 Apr  1 18:15 .
+drwxrwsr-x 11 root staff     4096 Apr  1 18:15 ..
+-rw-r--r--  1 root staff  2220126 Apr  1 18:15 chipdb-1k.bin
+-rw-r--r--  1 root staff   523383 Apr  1 18:15 chipdb-384.bin
+-rw-r--r--  1 root staff  8850549 Apr  1 18:15 chipdb-5k.bin
+-rw-r--r--  1 root staff 11977274 Apr  1 18:15 chipdb-8k.bin

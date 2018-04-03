@@ -1,0 +1,176 @@
+zipcpu
+commit e03f4acf2c27a57d3ad6404c4885667a18eaae76
+Author: ZipCPU <dgisselq@ieee.org>
+Date:   Wed Mar 21 08:05:15 2018 -0400
+
+autofpga
+commit 83c896baa34a4b2b8927887443bcc154d6cd96d6
+Author: ZipCPU <dgisselq@ieee.org>
+Date:   Tue Mar 13 19:39:46 2018 -0400
+
+icozip
+commit bf440d649583f12a48fad4404e36cdfa69dd24a4
+Author: ZipCPU <dgisselq@ieee.org>
+Date:   Fri Oct 20 22:29:56 2017 -0400
+
+commit 21809924600a7d6608ba0f2d098ee3ae30f64834
+Merge: 9b0603c 3bee3cf
+Author: Clifford Wolf <clifford@clifford.at>
+Date:   Sun Apr 1 15:19:27 2018 +0200
+
+arachne-pnr
+commit a90f974af3f3ce5e301fb0f9e6fd0b65c6c0a01b
+Merge: 6701132 32bab64
+Author: Clifford Wolf <clifford@clifford.at>
+Date:   Sun Apr 1 15:20:05 2018 +0200
+
+yosys
+commit 2b00c1dbd6b916aae6f97191d34b786a316c706e
+Merge: 93985d91 efed2420
+Author: Clifford Wolf <clifford@clifford.at>
+Date:   Sun Apr 1 15:32:47 2018 +0200
+
+
+
+
+starting with 2 new image-2018-03-31-Raspbianultibo.zip 
+Adding dependencies
+
+#!/bin/bash
+sudo apt-get install octave  vlc kicad  xchat  \
+ecryptfs-utils gawk gimp gtkwave iverilog clang \
+samba samba-common-bin smbclient cifs-utils \
+libftdi-dev libmpc-dev libmpfr-dev verilator bc mercurial \
+libbison-dev libgmp-dev libelf-dev ncurses-dev ctags \
+default-jdk libreadline-dev xdot graphviz
+14334 packages is increased to 1656
+
+dpkg -l | wc
+   1656   16914  237230
+    3  export PATH=$PATH:/home/pi/zipcpu/sw/install/cross-tools/bin
+    4  cd zipcpu/sw
+    5  date >> t1.txt ; make ; date >> t1.txt
+Sun  1 Apr 16:05:04 UTC 2018
+Sun  1 Apr 19:10:17 UTC 2018 
+
+   14  cd ~/autofpga/
+   15  date > t2.txt ; make; date >> t2.txt
+      
+    3  git clone https://github.com/develone/yosys.git
+    4  git clone https://github.com/develone/icestorm.git
+    5  git clone https://github.com/develone/zipcpu.git
+    6  git clone --depth 1 https://github.com/develone/zipcpu.git
+    7  ls
+    8  git clone https://github.com/develone/autofpga.git
+    9  git clone https://github.com/develone/icozip.git
+   10  ls
+   11  cd yosys/
+   12  git remote add upstream https://github.com/YosysHQ/yosys.git
+   13  git fetch upstream
+   14  git merge upstream/master
+   15  git push origin master
+   16  cd ../icestorm/
+   17  git remote add upstream https://github.com/cliffordwolf/icestorm.git
+   18  git fetch upstream
+   19  git merge upstream/master
+   20  git push origin master
+   21  cd ../
+   22  ls
+   23  git clone https://github.com/develone/arachne-pnr.git
+   24  cd arachne-pnr/
+   25  git remote add upstream https://github.com/cseed/arachne-pnr.git
+   26  git fetch upstream
+   27  git merge upstream/master
+   28  git push origin master
+   29  cd ~/icestorm/
+   30  ls
+   31  less README 
+   32  cd ../yosys/
+   33  less README.md 
+   34  cd ../
+   35  cd yosys/
+   36  less README.md 
+   37  sudo apt-get install graphviz xdot
+   38  cd ~/icestorm/
+   39  pwd
+   40  less README 
+   41  date > ../buildicestorm.txt; make ; date >> ../buildicestorm.txt 
+   42  sudo make install
+   43  ls -la /usr/local/bin/
+   44  ls -la /usr/local/bin/ >> ../buildicestorm.txt 
+   45  ls
+   46  cd ../
+   47  rsync -avl icestorm 192.168.1.200:~/
+   48  cd arachne-pnr/
+   49  less README.md 
+   50  date > ../buildarachne-pnr.txt; make ; date >> ../buildarachne-pnr.txt 
+   51  sudo make install
+   52  ls -la /usr/local/bin/ar*
+   53  ls -la /usr/local/share/ar*
+   54  ls -la /usr/local/bin/ar* >> ~/buildarachne-pnr.txt 
+   55  ls -la /usr/local/share/ar* >> ~/buildarachne-pnr.txt 
+   56  cd ..
+   57  ls
+   58  cat buildarachne-pnr.txt 
+   59  rsync -avl arachne-pnr 192.168.1.200:~/
+   60  cd yosys/
+   61  date > ../buildyosys.txt; make ; date >> ../buildyosys.txt 
+
+export PATH=$PATH:/home/pi/zipcpu/sw/install/cross-tools/bin:/home/pi/autofpga/sw
+
+which autofpga
+/home/pi/autofpga/sw/autofpga
+
+which zip-gcc
+/home/pi/zipcpu/sw/install/cross-tools/bin/zip-gcc
+
+cd icozip/rtl/icozip
+
+date > ../../buildicozip.txt; make ; date >> ../../buildicozip.txt
+Mon  2 Apr 13:33:16 UTC 2018
+Mon  2 Apr 13:46:01 UTC 2018
+ls
+auto.mk        icozip.asc   memdev.v      spio.v        wbgpio.v
+builddate.v    icozip.bin   obj-arm       testmain.v    wbpwmaudio.v
+cpu            icozip.blif  rtcdate.v     toplevel.v    wbqspiflash.v
+cpudefs.h      icozip.pcf   rxuartlite.v  txuartlite.v  wbscopc.v
+design.h       main.v       rxuart.v      txuart.v      wbscope.v
+flashconfig.v  Makefile     simple.log    ufifo.v       wbubus
+
+ls wbubus/
+wbconsole.v        wbucompress.v    wbudeword.v  wbuidleint.v  wbureadcw.v
+wbubus.v           wbuconsole.v     wbuexec.v    wbuinput.v    wbusixchar.v
+wbucompactlines.v  wbudecompress.v  wbufifo.v    wbuoutput.v   wbutohex.v
+
+ls cpu
+busdelay.v  div.v       pfcache.v    wbdblpriarb.v   zipbones.v    zipsystem.v
+cpudefs.v   icontrol.v  pipemem.v    wbdmac.v        zipcounter.v  ziptimer.v
+cpuops.v    idecode.v   prefetch.v   wbpriarbiter.v  zipcpu.v
+dblfetch.v  memops.v    wbarbiter.v  wbwatchdog.v    zipjiffies.v
+
+cd icozip/sw/host
+
+export PATH=$PATH:/home/pi/zipcpu/sw/install/cross-tools/bin
+
+arch.sh       byteswap.h  llcomms.cpp   obj-arm      resetbus.cpp
+arm-netpport  devbus.h    llcomms.h     port.h       ttybus.cpp
+arm-wbregs    hexbus.cpp  Makefile      regdefs.cpp  ttybus.h
+byteswap.cpp  hexbus.h    netpport.cpp  regdefs.h    wbregs.cpp
+ 
+<ZipCPU> I downloaded any program to the icoBoard using icoprog from the icetool suite
+<develonepi3> I got the  icozio/sw/host which creates arm-wbregs & arm-netpport which have spi commented out.
+<ZipCPU> Neither arm-wbregs nor arm-netpport load the icoBoard.  They are used for communicating with the icoBoard over the RPi's parallel port
+
+***********************************************************
+  596  git clone https://github.com/develone/xulalx25soc.git
+  598  cd xulalx25soc/sw
+  635  sudo apt-get install libusb-1.0.0-dev
+sudo apt-get install libusb-1.0.0
+sudo pip install xstools
+sudo pip uninstall xstools
+https://github.com/xesscorp/xsconnect/issues/1
+git clone https://github.com/develone/XSTOOLs.git
+
+/usr/local/bin/xstest.py -v --usb 0 -b xula2-lx9
+sudo pip uninstall Pypubsub
+sudo pip install -Iv https://pypi.python.org/packages/95/5a/1801be1a63af9250e79b8941a37b88e3ca0d660b880b9862fe9016ae6a3a/PyPubSub-3.3.0.zip

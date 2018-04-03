@@ -1,0 +1,24 @@
+Sun  1 Apr 17:27:43 UTC 2018
+Sun  1 Apr 17:48:27 UTC 2018
+total 7080
+drwxrwsr-x  2 root staff    4096 Apr  1 18:00 .
+drwxrwsr-x 10 root staff    4096 Mar 31 14:56 ..
+-rwxr-xr-x  1 root staff   41541 Apr  1 18:00 icebox_asc2hlc
+-rwxr-xr-x  1 root staff   10253 Apr  1 18:00 icebox_chipdb
+-rwxr-xr-x  1 root staff    4928 Apr  1 18:00 icebox_colbuf
+-rw-r--r--  1 root staff  927720 Apr  1 18:00 iceboxdb.py
+-rwxr-xr-x  1 root staff    3641 Apr  1 18:00 icebox_diff
+-rwxr-xr-x  1 root staff    6183 Apr  1 18:00 icebox_explain
+-rwxr-xr-x  1 root staff   35914 Apr  1 18:00 icebox_hlc2asc
+-rwxr-xr-x  1 root staff   25934 Apr  1 18:00 icebox_html
+-rwxr-xr-x  1 root staff    4905 Apr  1 18:00 icebox_maps
+-rw-r--r--  1 root staff  187314 Apr  1 18:00 icebox.py
+-rwxr-xr-x  1 root staff    4105 Apr  1 18:00 icebox_stat
+-rwxr-xr-x  1 root staff   42414 Apr  1 18:00 icebox_vlog
+-rwxr-xr-x  1 root staff  483832 Apr  1 18:00 icebram
+-rwxr-xr-x  1 root staff   62248 Apr  1 18:00 icemulti
+-rwxr-xr-x  1 root staff  480076 Apr  1 18:00 icepack
+-rwxr-xr-x  1 root staff   20768 Apr  1 18:00 icepll
+-rwxr-xr-x  1 root staff   38968 Apr  1 18:00 iceprog
+-rwxr-xr-x  1 root staff 4816596 Apr  1 18:00 icetime
+lrwxrwxrwx  1 root staff       7 Apr  1 18:00 iceunpack -> icepack
