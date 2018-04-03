@@ -1,0 +1,559 @@
+pi@pi3-4:~/XSTOOLs $ git clone https://github.com/xesscorp/XSTOOLs.git
+
+Testing an older version that was working on ubuntu 12.04
+
+pi@pi3-4:~/XSTOOLs $ git checkout 018a8b0f1827f8b
+commit 018a8b0f1827f8b6ee13065779e52b03ea77cef8
+Author: Dave Vandenbout <devb@xess.com>
+Date:   Wed Sep 2 23:16:30 2015 -0400
+
+pi@pi3-4:~/XSTOOLs $ sudo python setup.py install
+running install
+running bdist_egg
+running egg_info
+creating XsTools.egg-info
+writing requirements to XsTools.egg-info/requires.txt
+writing XsTools.egg-info/PKG-INFO
+writing top-level names to XsTools.egg-info/top_level.txt
+writing dependency_links to XsTools.egg-info/dependency_links.txt
+writing entry points to XsTools.egg-info/entry_points.txt
+writing manifest file 'XsTools.egg-info/SOURCES.txt'
+reading manifest file 'XsTools.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no previously-included files matching '__pycache__' found under directory '*'
+warning: no previously-included files matching '*.py[co]' found under directory '*'
+writing manifest file 'XsTools.egg-info/SOURCES.txt'
+installing library code to build/bdist.linux-armv7l/egg
+running install_lib
+running build_py
+creating build
+creating build/lib.linux-armv7l-2.7
+creating build/lib.linux-armv7l-2.7/tests
+copying tests/__init__.py -> build/lib.linux-armv7l-2.7/tests
+copying tests/test_xsconnect.py -> build/lib.linux-armv7l-2.7/tests
+creating build/lib.linux-armv7l-2.7/xstools
+copying xstools/xsspi.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/flashdev.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xshostio.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xsmemio.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/gxstools.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/ramdev.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xsusbprg.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xstest.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xsusb.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xsboard.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xsi2c.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xserror.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/__init__.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/picmicro.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/XstoolsApi.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xilfpga.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xscomm.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xsload.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xsjtag.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xilbitstr.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/usb2serial.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xsbitarray.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xsdutio.py -> build/lib.linux-armv7l-2.7/xstools
+copying xstools/xsflags.py -> build/lib.linux-armv7l-2.7/xstools
+creating build/lib.linux-armv7l-2.7/xstools/test
+copying xstools/test/test_utils.py -> build/lib.linux-armv7l-2.7/xstools/test
+copying xstools/test/test_location.py -> build/lib.linux-armv7l-2.7/xstools/test
+copying xstools/test/__init__.py -> build/lib.linux-armv7l-2.7/xstools/test
+creating build/lib.linux-armv7l-2.7/xstools/xula
+copying xstools/xula/test_board_jtag_50.bit -> build/lib.linux-armv7l-2.7/xstools/xula
+copying xstools/xula/fintf_jtag_200.bit -> build/lib.linux-armv7l-2.7/xstools/xula
+copying xstools/xula/ramintfc_jtag_200.bit -> build/lib.linux-armv7l-2.7/xstools/xula
+copying xstools/xula/fintf_jtag_50.bit -> build/lib.linux-armv7l-2.7/xstools/xula
+copying xstools/xula/test_board_jtag_200.bit -> build/lib.linux-armv7l-2.7/xstools/xula
+copying xstools/xula/ramintfc_jtag_50.bit -> build/lib.linux-armv7l-2.7/xstools/xula
+creating build/lib.linux-armv7l-2.7/xstools/xula2
+copying xstools/xula2/ramintfc_jtag_lx25.bit -> build/lib.linux-armv7l-2.7/xstools/xula2
+copying xstools/xula2/fintf_jtag_lx9.bit -> build/lib.linux-armv7l-2.7/xstools/xula2
+copying xstools/xula2/test_board_jtag_lx25.bit -> build/lib.linux-armv7l-2.7/xstools/xula2
+copying xstools/xula2/ramintfc_jtag_lx9.bit -> build/lib.linux-armv7l-2.7/xstools/xula2
+copying xstools/xula2/test_board_jtag_lx9.bit -> build/lib.linux-armv7l-2.7/xstools/xula2
+copying xstools/xula2/fintf_jtag_lx25.bit -> build/lib.linux-armv7l-2.7/xstools/xula2
+copying xstools/xula/XuLA_jtag.hex -> build/lib.linux-armv7l-2.7/xstools/xula
+copying xstools/xula2/XuLA_jtag.hex -> build/lib.linux-armv7l-2.7/xstools/xula2
+copying xstools/81-xstools-usb.rules -> build/lib.linux-armv7l-2.7/xstools
+creating build/lib.linux-armv7l-2.7/xstools/icons
+copying xstools/icons/down_arrow_disabled.png -> build/lib.linux-armv7l-2.7/xstools/icons
+copying xstools/icons/serial_flash.png -> build/lib.linux-armv7l-2.7/xstools/icons
+copying xstools/icons/sdram.png -> build/lib.linux-armv7l-2.7/xstools/icons
+copying xstools/icons/fpga.png -> build/lib.linux-armv7l-2.7/xstools/icons
+copying xstools/icons/uc.png -> build/lib.linux-armv7l-2.7/xstools/icons
+copying xstools/icons/down_arrow.png -> build/lib.linux-armv7l-2.7/xstools/icons
+creating build/bdist.linux-armv7l
+creating build/bdist.linux-armv7l/egg
+creating build/bdist.linux-armv7l/egg/tests
+copying build/lib.linux-armv7l-2.7/tests/__init__.py -> build/bdist.linux-armv7l/egg/tests
+copying build/lib.linux-armv7l-2.7/tests/test_xsconnect.py -> build/bdist.linux-armv7l/egg/tests
+creating build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xsspi.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/flashdev.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xshostio.py -> build/bdist.linux-armv7l/egg/xstools
+creating build/bdist.linux-armv7l/egg/xstools/icons
+copying build/lib.linux-armv7l-2.7/xstools/icons/down_arrow_disabled.png -> build/bdist.linux-armv7l/egg/xstools/icons
+copying build/lib.linux-armv7l-2.7/xstools/icons/serial_flash.png -> build/bdist.linux-armv7l/egg/xstools/icons
+copying build/lib.linux-armv7l-2.7/xstools/icons/sdram.png -> build/bdist.linux-armv7l/egg/xstools/icons
+copying build/lib.linux-armv7l-2.7/xstools/icons/fpga.png -> build/bdist.linux-armv7l/egg/xstools/icons
+copying build/lib.linux-armv7l-2.7/xstools/icons/uc.png -> build/bdist.linux-armv7l/egg/xstools/icons
+copying build/lib.linux-armv7l-2.7/xstools/icons/down_arrow.png -> build/bdist.linux-armv7l/egg/xstools/icons
+copying build/lib.linux-armv7l-2.7/xstools/xsmemio.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/gxstools.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/ramdev.py -> build/bdist.linux-armv7l/egg/xstools
+creating build/bdist.linux-armv7l/egg/xstools/xula
+copying build/lib.linux-armv7l-2.7/xstools/xula/test_board_jtag_50.bit -> build/bdist.linux-armv7l/egg/xstools/xula
+copying build/lib.linux-armv7l-2.7/xstools/xula/fintf_jtag_200.bit -> build/bdist.linux-armv7l/egg/xstools/xula
+copying build/lib.linux-armv7l-2.7/xstools/xula/ramintfc_jtag_200.bit -> build/bdist.linux-armv7l/egg/xstools/xula
+copying build/lib.linux-armv7l-2.7/xstools/xula/fintf_jtag_50.bit -> build/bdist.linux-armv7l/egg/xstools/xula
+copying build/lib.linux-armv7l-2.7/xstools/xula/test_board_jtag_200.bit -> build/bdist.linux-armv7l/egg/xstools/xula
+copying build/lib.linux-armv7l-2.7/xstools/xula/ramintfc_jtag_50.bit -> build/bdist.linux-armv7l/egg/xstools/xula
+copying build/lib.linux-armv7l-2.7/xstools/xula/XuLA_jtag.hex -> build/bdist.linux-armv7l/egg/xstools/xula
+copying build/lib.linux-armv7l-2.7/xstools/xsusbprg.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xstest.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xsusb.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xsboard.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xsi2c.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xserror.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/__init__.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/picmicro.py -> build/bdist.linux-armv7l/egg/xstools
+creating build/bdist.linux-armv7l/egg/xstools/test
+copying build/lib.linux-armv7l-2.7/xstools/test/test_utils.py -> build/bdist.linux-armv7l/egg/xstools/test
+copying build/lib.linux-armv7l-2.7/xstools/test/test_location.py -> build/bdist.linux-armv7l/egg/xstools/test
+copying build/lib.linux-armv7l-2.7/xstools/test/__init__.py -> build/bdist.linux-armv7l/egg/xstools/test
+copying build/lib.linux-armv7l-2.7/xstools/81-xstools-usb.rules -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/XstoolsApi.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xilfpga.py -> build/bdist.linux-armv7l/egg/xstools
+creating build/bdist.linux-armv7l/egg/xstools/xula2
+copying build/lib.linux-armv7l-2.7/xstools/xula2/ramintfc_jtag_lx25.bit -> build/bdist.linux-armv7l/egg/xstools/xula2
+copying build/lib.linux-armv7l-2.7/xstools/xula2/fintf_jtag_lx9.bit -> build/bdist.linux-armv7l/egg/xstools/xula2
+copying build/lib.linux-armv7l-2.7/xstools/xula2/test_board_jtag_lx25.bit -> build/bdist.linux-armv7l/egg/xstools/xula2
+copying build/lib.linux-armv7l-2.7/xstools/xula2/ramintfc_jtag_lx9.bit -> build/bdist.linux-armv7l/egg/xstools/xula2
+copying build/lib.linux-armv7l-2.7/xstools/xula2/test_board_jtag_lx9.bit -> build/bdist.linux-armv7l/egg/xstools/xula2
+copying build/lib.linux-armv7l-2.7/xstools/xula2/XuLA_jtag.hex -> build/bdist.linux-armv7l/egg/xstools/xula2
+copying build/lib.linux-armv7l-2.7/xstools/xula2/fintf_jtag_lx25.bit -> build/bdist.linux-armv7l/egg/xstools/xula2
+copying build/lib.linux-armv7l-2.7/xstools/xscomm.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xsload.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xsjtag.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xilbitstr.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/usb2serial.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xsbitarray.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xsdutio.py -> build/bdist.linux-armv7l/egg/xstools
+copying build/lib.linux-armv7l-2.7/xstools/xsflags.py -> build/bdist.linux-armv7l/egg/xstools
+byte-compiling build/bdist.linux-armv7l/egg/tests/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-armv7l/egg/tests/test_xsconnect.py to test_xsconnect.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xsspi.py to xsspi.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/flashdev.py to flashdev.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xshostio.py to xshostio.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xsmemio.py to xsmemio.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/gxstools.py to gxstools.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/ramdev.py to ramdev.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xsusbprg.py to xsusbprg.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xstest.py to xstest.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xsusb.py to xsusb.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xsboard.py to xsboard.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xsi2c.py to xsi2c.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xserror.py to xserror.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/picmicro.py to picmicro.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/test/test_utils.py to test_utils.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/test/test_location.py to test_location.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/test/__init__.py to __init__.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/XstoolsApi.py to XstoolsApi.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xilfpga.py to xilfpga.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xscomm.py to xscomm.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xsload.py to xsload.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xsjtag.py to xsjtag.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xilbitstr.py to xilbitstr.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/usb2serial.py to usb2serial.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xsbitarray.py to xsbitarray.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xsdutio.py to xsdutio.pyc
+byte-compiling build/bdist.linux-armv7l/egg/xstools/xsflags.py to xsflags.pyc
+creating build/bdist.linux-armv7l/egg/EGG-INFO
+copying XsTools.egg-info/PKG-INFO -> build/bdist.linux-armv7l/egg/EGG-INFO
+copying XsTools.egg-info/SOURCES.txt -> build/bdist.linux-armv7l/egg/EGG-INFO
+copying XsTools.egg-info/dependency_links.txt -> build/bdist.linux-armv7l/egg/EGG-INFO
+copying XsTools.egg-info/entry_points.txt -> build/bdist.linux-armv7l/egg/EGG-INFO
+copying XsTools.egg-info/not-zip-safe -> build/bdist.linux-armv7l/egg/EGG-INFO
+copying XsTools.egg-info/requires.txt -> build/bdist.linux-armv7l/egg/EGG-INFO
+copying XsTools.egg-info/top_level.txt -> build/bdist.linux-armv7l/egg/EGG-INFO
+creating dist
+creating 'dist/XsTools-0.1.30-py2.7.egg' and adding 'build/bdist.linux-armv7l/egg' to it
+removing 'build/bdist.linux-armv7l/egg' (and everything under it)
+Processing XsTools-0.1.30-py2.7.egg
+creating /usr/local/lib/python2.7/dist-packages/XsTools-0.1.30-py2.7.egg
+Extracting XsTools-0.1.30-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding XsTools 0.1.30 to easy-install.pth file
+Installing xsusbprg script to /usr/local/bin
+Installing xsload script to /usr/local/bin
+Installing xstest script to /usr/local/bin
+Installing usb2serial script to /usr/local/bin
+Installing xsflags script to /usr/local/bin
+Installing gxstools script to /usr/local/bin
+
+Installed /usr/local/lib/python2.7/dist-packages/XsTools-0.1.30-py2.7.egg
+Processing dependencies for XsTools==0.1.30
+Searching for intelhex>=1.4
+Reading https://pypi.python.org/simple/intelhex/
+Downloading https://pypi.python.org/packages/bf/77/bf670318b3db325c71e2ac6a90b7bcfdf9fc739b7cf6aebb31715721623e/intelhex-2.2.1-py2.py3-none-any.whl#md5=2487619b1e9fb7b04d791fd30a1b4829
+Best match: intelhex 2.2.1
+Processing intelhex-2.2.1-py2.py3-none-any.whl
+Installing intelhex-2.2.1-py2.py3-none-any.whl to /usr/local/lib/python2.7/dist-packages
+Adding intelhex 2.2.1 to easy-install.pth file
+Installing hexdiff.py script to /usr/local/bin
+Installing hex2bin.py script to /usr/local/bin
+Installing hexinfo.py script to /usr/local/bin
+Installing hexmerge.py script to /usr/local/bin
+Installing hex2dump.py script to /usr/local/bin
+Installing bin2hex.py script to /usr/local/bin
+
+Installed /usr/local/lib/python2.7/dist-packages/intelhex-2.2.1-py2.7.egg
+Searching for bitstring>=3.1.1
+Reading https://pypi.python.org/simple/bitstring/
+Downloading https://pypi.python.org/packages/f3/e5/dfe4c49c93d174a5fd807ed307d3a3f38c6b3e140972945f81a5f5578ca7/bitstring-3.1.5.zip#md5=70689a282f66625d0c7c3579a13e66db
+Best match: bitstring 3.1.5
+Processing bitstring-3.1.5.zip
+Writing /tmp/easy_install-9EFGxS/bitstring-3.1.5/setup.cfg
+Running bitstring-3.1.5/setup.py -q bdist_egg --dist-dir /tmp/easy_install-9EFGxS/bitstring-3.1.5/egg-dist-tmp-KB8sAy
+zip_safe flag not set; analyzing archive contents...
+Moving bitstring-3.1.5-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding bitstring 3.1.5 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/bitstring-3.1.5-py2.7.egg
+Searching for pyusb>=1.0.0a3
+Reading https://pypi.python.org/simple/pyusb/
+Downloading https://pypi.python.org/packages/5f/34/2095e821c01225377dda4ebdbd53d8316d6abb243c9bee43d3888fa91dd6/pyusb-1.0.2.tar.gz#md5=862b56452c64948c787ad8ef9498590b
+Best match: pyusb 1.0.2
+Processing pyusb-1.0.2.tar.gz
+Writing /tmp/easy_install-B6alvq/pyusb-1.0.2/setup.cfg
+Running pyusb-1.0.2/setup.py -q bdist_egg --dist-dir /tmp/easy_install-B6alvq/pyusb-1.0.2/egg-dist-tmp-d_TtKq
+warning: no files found matching 'ReleaseNotes.rst'
+zip_safe flag not set; analyzing archive contents...
+Moving pyusb-1.0.2-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+Adding pyusb 1.0.2 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/pyusb-1.0.2-py2.7.egg
+Searching for pypubsub>=3.1.2
+Reading https://pypi.python.org/simple/pypubsub/
+Downloading https://pypi.python.org/packages/14/80/8e1d34848fea10826763600ca7eeb7a76d914ccab7cb0d64c9c180c30a73/Pypubsub-4.0.0.zip#md5=20941dd6ceaf1085ed5f3591d0edfa6b
+Best match: Pypubsub 4.0.0
+Processing Pypubsub-4.0.0.zip
+Writing /tmp/easy_install-xiCgph/Pypubsub-4.0.0/setup.cfg
+Running Pypubsub-4.0.0/setup.py -q bdist_egg --dist-dir /tmp/easy_install-xiCgph/Pypubsub-4.0.0/egg-dist-tmp-U2ge1y
+  File "build/bdist.linux-armv7l/egg/pubsub/core/topicexc.py", line 22
+    def __init__(self, name: str, msg: str):
+                           ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/publisher.py", line 27
+    def __init__(self, treeConfig: TreeConfig = None):
+                                 ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/weakmethod.py", line 31
+    def getWeakRef(obj, notifyDead: DeadRefObserver = None):
+                                  ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/notificationmgr.py", line 20
+    def notifySubscribe(self, pubListener: Listener, topicObj: Topic, newSub: bool):
+                                         ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/topicutils.py", line 31
+    def smartDedent(paragraph: str) -> str:
+                             ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/callables.py", line 31
+    def getModule(obj: Any) -> ModuleType:
+                     ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/listener.py", line 57
+    def __call__(self, listenerID: str, topicObj: Topic):
+                                 ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/topictreetraverser.py", line 19
+    def _accept(self, topicObj: Topic):
+                              ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/topicdefnprovider.py", line 41
+    def getDefn(self, topicNameTuple: Sequence[str]) -> Tuple[str, ArgSpecGiven]:
+                                    ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/annotations.py", line 11
+    def annotationType(sig_obj: Any):
+                              ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/topicobj.py", line 69
+    def __init__(self, treeConfig: TreeConfig, nameTuple: Tuple[str, ...], description: str,
+                                 ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/topicmgr.py", line 55
+    def __init__(self, notificationHandler: INotificationHandler = None,
+                                          ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/core/topicargspec.py", line 44
+    def topicArgsFromCallable(_callable: UserListener, ignoreArgs: Seq[str] = None) -> Tuple[ArgsDocs, List[str]]:
+                                       ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/utils/notification.py", line 35
+    def notifySubscribe(self, pubListener: Listener, topicObj: Topic, newSub: bool):
+                                         ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/utils/exchandling.py", line 58
+    def getFormattedList(self) -> List[str]:
+                               ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/utils/topictreeprinter.py", line 47
+    def __init__(self, extra=None, width: int = 70, indentStep: int = 4,
+                                        ^
+SyntaxError: invalid syntax
+
+  File "build/bdist.linux-armv7l/egg/pubsub/pub.py", line 146
+    def getDefaultPublisher() -> Publisher:
+                              ^
+SyntaxError: invalid syntax
+
+creating /usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg
+Extracting Pypubsub-4.0.0-py2.7.egg to /usr/local/lib/python2.7/dist-packages
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/pub.py", line 146
+    def getDefaultPublisher() -> Publisher:
+                              ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/annotations.py", line 11
+    def annotationType(sig_obj: Any):
+                              ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/callables.py", line 31
+    def getModule(obj: Any) -> ModuleType:
+                     ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/listener.py", line 57
+    def __call__(self, listenerID: str, topicObj: Topic):
+                                 ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/notificationmgr.py", line 20
+    def notifySubscribe(self, pubListener: Listener, topicObj: Topic, newSub: bool):
+                                         ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/publisher.py", line 27
+    def __init__(self, treeConfig: TreeConfig = None):
+                                 ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/topicargspec.py", line 44
+    def topicArgsFromCallable(_callable: UserListener, ignoreArgs: Seq[str] = None) -> Tuple[ArgsDocs, List[str]]:
+                                       ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/topicdefnprovider.py", line 41
+    def getDefn(self, topicNameTuple: Sequence[str]) -> Tuple[str, ArgSpecGiven]:
+                                    ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/topicexc.py", line 22
+    def __init__(self, name: str, msg: str):
+                           ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/topicmgr.py", line 55
+    def __init__(self, notificationHandler: INotificationHandler = None,
+                                          ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/topicobj.py", line 69
+    def __init__(self, treeConfig: TreeConfig, nameTuple: Tuple[str, ...], description: str,
+                                 ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/topictreetraverser.py", line 19
+    def _accept(self, topicObj: Topic):
+                              ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/topicutils.py", line 31
+    def smartDedent(paragraph: str) -> str:
+                             ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/core/weakmethod.py", line 31
+    def getWeakRef(obj, notifyDead: DeadRefObserver = None):
+                                  ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/utils/exchandling.py", line 58
+    def getFormattedList(self) -> List[str]:
+                               ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/utils/notification.py", line 35
+    def notifySubscribe(self, pubListener: Listener, topicObj: Topic, newSub: bool):
+                                         ^
+SyntaxError: invalid syntax
+
+  File "/usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg/pubsub/utils/topictreeprinter.py", line 47
+    def __init__(self, extra=None, width: int = 70, indentStep: int = 4,
+                                        ^
+SyntaxError: invalid syntax
+
+Adding Pypubsub 4.0.0 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/Pypubsub-4.0.0-py2.7.egg
+Searching for typing
+Reading https://pypi.python.org/simple/typing/
+Downloading https://pypi.python.org/packages/0d/4d/4e5985d075d241d686a1663fa1f88b61d544658d08c1375c7c6aac32afc3/typing-3.6.4-py2-none-any.whl#md5=30a146b20951154b6f4435a233fe38f8
+Best match: typing 3.6.4
+Processing typing-3.6.4-py2-none-any.whl
+Installing typing-3.6.4-py2-none-any.whl to /usr/local/lib/python2.7/dist-packages
+Adding typing 3.6.4 to easy-install.pth file
+
+Installed /usr/local/lib/python2.7/dist-packages/typing-3.6.4-py2.7.egg
+Finished processing dependencies for XsTools==0.1.30
+control: unrecognized option '--reload_rules'
+
+
+pi@pi3-4:~/XSTOOLs $ cd xstools/
+pi@pi3-4:~/XSTOOLs/xstools $ ls
+81-xstools-usb.rules  picmicro.py    xsboard.py   xsjtag.py      xsusb.py
+Erase_Flash.XES       ramdev.py      xscomm.py    xsload.py      xula
+flashdev.py           test           xsdutio.py   xsmemio.py     xula2
+gxstools.py           usb2serial.py  xserror.py   xsspi.py
+icons                 xilbitstr.py   xsflags.py   xstest.py
+__init__.py           xilfpga.py     xshostio.py  XstoolsApi.py
+__init__.pyc          xsbitarray.py  xsi2c.py     xsusbprg.py
+
+pi@pi3-4:~/XSTOOLs/xstools $ sudo pip uninstall Pypubsub
+
+pi@pi3-4:~/XSTOOLs/xstools $ sudo pip install -Iv https://pypi.python.org/packages/95/5a/1801be1a63af9250e79b8941a37b88e3ca0d660b880b9862fe9016ae6a3a/PyPubSub-3.3.0.zip
+
+pi@pi3-4:~/XSTOOLs/xstools $ python xstest.py --usb 0 -b xula2-lx9
+Success: XuLA2-LX9 passed diagnostic test!
+
+pi@pi3-4:~/XSTOOLs/xstools $ python xsload.py --usb 0 --fpga ~/raspberrypi2_yocto/xstools_test_files/pc_fast_blinker_sub_h1.bit 
+Success: Bitstream in /home/pi/raspberrypi2_yocto/xstools_test_files/pc_fast_blinker_sub_h1.bit downloaded to FPGA on XuLA2-LX9!
+
+pi@pi3-4:~/XSTOOLs/xstools $ python ~/raspberrypi2_yocto/xstools_test_files/pc_subtractor_test.py 
+
+##################################################################
+# This program tests the interface between the host PC and the FPGA 
+# on the XuLA board that has been programmed to act as a subtractor.
+##################################################################
+
+107 -   3 =  104 ==> CORRECT!
+ 14 -  37 =  -23 ==> CORRECT!
+  9 -  39 =  -30 ==> CORRECT!
+ 36 -  97 =  -61 ==> CORRECT!
+116 - 120 =   -4 ==> CORRECT!
+ 59 -  58 =    1 ==> CORRECT!
+100 -  89 =   11 ==> CORRECT!
+ 10 -   6 =    4 ==> CORRECT!
+ 58 -  97 =  -39 ==> CORRECT!
+ 10 -  26 =  -16 ==> CORRECT!
+ 78 -  32 =   46 ==> CORRECT!
+ 61 -  10 =   51 ==> CORRECT!
+ 61 -  33 =   28 ==> CORRECT!
+ 15 - 122 = -107 ==> CORRECT!
+ 92 - 108 =  -16 ==> CORRECT!
+  5 -   7 =   -2 ==> CORRECT!
+127 -  59 =   68 ==> CORRECT!
+ 54 -  54 =    0 ==> CORRECT!
+ 10 - 125 = -115 ==> CORRECT!
+  1 -  59 =  -58 ==> CORRECT!
+120 -  46 =   74 ==> CORRECT!
+ 59 - 124 =  -65 ==> CORRECT!
+  4 -  49 =  -45 ==> CORRECT!
+118 -  19 =   99 ==> CORRECT!
+ 74 -  32 =   42 ==> CORRECT!
+ 45 -  10 =   35 ==> CORRECT!
+ 80 -  68 =   12 ==> CORRECT!
+ 27 - 104 =  -77 ==> CORRECT!
+124 -  90 =   34 ==> CORRECT!
+  0 -  63 =  -63 ==> CORRECT!
+  8 -  13 =   -5 ==> CORRECT!
+ 74 -  31 =   43 ==> CORRECT!
+100 -  56 =   44 ==> CORRECT!
+108 -  55 =   53 ==> CORRECT!
+ 42 -  93 =  -51 ==> CORRECT!
+ 20 - 113 =  -93 ==> CORRECT!
+ 21 - 107 =  -86 ==> CORRECT!
+ 89 - 100 =  -11 ==> CORRECT!
+ 47 - 114 =  -67 ==> CORRECT!
+ 76 -  89 =  -13 ==> CORRECT!
+ 48 -  62 =  -14 ==> CORRECT!
+ 51 - 118 =  -67 ==> CORRECT!
+ 24 - 120 =  -96 ==> CORRECT!
+ 71 -  68 =    3 ==> CORRECT!
+  8 - 106 =  -98 ==> CORRECT!
+ 70 -  29 =   41 ==> CORRECT!
+ 60 -  32 =   28 ==> CORRECT!
+ 76 -  23 =   53 ==> CORRECT!
+  1 -   2 =   -1 ==> CORRECT!
+123 - 123 =    0 ==> CORRECT!
+  9 -  30 =  -21 ==> CORRECT!
+ 54 -  63 =   -9 ==> CORRECT!
+ 86 -  90 =   -4 ==> CORRECT!
+123 -   0 =  123 ==> CORRECT!
+ 72 -  76 =   -4 ==> CORRECT!
+ 79 -  83 =   -4 ==> CORRECT!
+ 10 -  53 =  -43 ==> CORRECT!
+108 - 107 =    1 ==> CORRECT!
+ 40 -  81 =  -41 ==> CORRECT!
+ 65 -  68 =   -3 ==> CORRECT!
+  9 -  30 =  -21 ==> CORRECT!
+  2 - 119 = -117 ==> CORRECT!
+ 10 -  30 =  -20 ==> CORRECT!
+119 -  89 =   30 ==> CORRECT!
+ 10 -  28 =  -18 ==> CORRECT!
+ 71 - 126 =  -55 ==> CORRECT!
+  2 -  75 =  -73 ==> CORRECT!
+ 83 -  62 =   21 ==> CORRECT!
+124 - 121 =    3 ==> CORRECT!
+ 76 -  47 =   29 ==> CORRECT!
+ 80 - 116 =  -36 ==> CORRECT!
+122 - 123 =   -1 ==> CORRECT!
+ 19 -  84 =  -65 ==> CORRECT!
+ 68 -  73 =   -5 ==> CORRECT!
+  2 -  37 =  -35 ==> CORRECT!
+ 81 - 101 =  -20 ==> CORRECT!
+ 13 -  59 =  -46 ==> CORRECT!
+ 76 -  45 =   31 ==> CORRECT!
+  3 -  19 =  -16 ==> CORRECT!
+102 -   1 =  101 ==> CORRECT!
+ 35 -   3 =   32 ==> CORRECT!
+ 50 - 127 =  -77 ==> CORRECT!
+114 -  36 =   78 ==> CORRECT!
+ 80 -  39 =   41 ==> CORRECT!
+ 25 - 122 =  -97 ==> CORRECT!
+ 46 - 120 =  -74 ==> CORRECT!
+123 - 123 =    0 ==> CORRECT!
+ 62 -  74 =  -12 ==> CORRECT!
+ 12 -   1 =   11 ==> CORRECT!
+103 -  94 =    9 ==> CORRECT!
+ 41 -  73 =  -32 ==> CORRECT!
+ 20 -  41 =  -21 ==> CORRECT!
+ 18 -  27 =   -9 ==> CORRECT!
+ 37 -  98 =  -61 ==> CORRECT!
+ 30 -  26 =    4 ==> CORRECT!
+119 -   5 =  114 ==> CORRECT!
+105 -  46 =   59 ==> CORRECT!
+ 18 - 101 =  -83 ==> CORRECT!
+ 32 - 123 =  -91 ==> CORRECT!
+ 56 -  49 =    7 ==> CORRECT!
