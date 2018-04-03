@@ -1,0 +1,17 @@
+pi@pi3-3:~/XSTOOLs/xstools $ python xsload.py --usb 0 --fpga ~/XULALX25SOC_GITHUB/toplevel.bit 
+Success: Bitstream in /home/pi/XULALX25SOC_GITHUB/toplevel.bit downloaded to FPGA on XuLA2-LX9!
+
+pi@pi3-3:~/XSTOOLs/xstools $ cd ~/xulalx25soc/sw/
+pi@pi3-3:~/xulalx25soc/sw $ ./wbsettime 
+Sleeping for 39 seconds, so as to set time at the top of the minute
+Time set to   021200
+Date set to 20180403
+(Now reads 20180403)
+pi@pi3-3:~/xulalx25soc/sw $ ./wbregs time
+00000440 (   CLOCK) : [....] 00021320
+pi@pi3-3:~/xulalx25soc/sw $ date
+Tue  3 Apr 02:13:28 UTC 2018
+pi@pi3-3:~/xulalx25soc/sw $ ./wbregs date
+00000414 (    DATE) : [....] 20180403
+
+
