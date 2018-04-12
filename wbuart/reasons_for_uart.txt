@@ -1,0 +1,38 @@
+04/11/18
+One of the challenges of working with FPGAs and a computer is getting 
+data into the FPGA and back to computer. When I working with XulA2-LX9
+a Spartan 6 from Xilinx.  At the time Dan Gisselquist helped to get 1M baud 
+between the XulA2-LX9 and RPi2B. 
+
+I was using the ZipCPU by Dan Gisselquist.  
+Dan Gisselquist has a version of the ZipCPU running on the ICOBOARD which is the 
+same chip as the CATBOARD HX8k from Lattice.  I hope to use Dan's 
+autofpga to get a version of ZipCPU runnning on the CATBOARD.
+
+With MyHDL and RHEA in Python which can be used for Simulation and 
+Iverilog was used for Co Simulation.   Dan Gisselquist perfers C and Verialator 
+I started looking at a fork of Dan's wbuart32 https://github.com/develone/wbuart32.git,
+I have been wanting to learn verilator for some time.
+C and Verilator like MyHDL, RHEA, and Iverilog create Value Change Data vcd files.
+
+This is a good starting point for students learning FPGA.  
+git clone https://github.com/develone/wbuart32.git
+cd wbuart32/
+make
+./linetest
+Successfully read 31 characters: This is a UART testing string
+
+PASS!
+./speechtest
+MATCH COMPLETE, nr = 2203 (/ 2203)
+PASS
+bench/cpp/linetest
+Successfully read 31 characters: This is a UART testing string
+
+PASS!
+In addition this provides a vcd file linetest.vcd that can be viewed with 
+GTKWAVE 
+
+pi@pi3-2:~/wbuart32 $ ls rtl/
+Makefile  rxuartlite.v  txuartlite.v  ufifo.v          wbuart.v
+obj_dir   rxuart.v      txuart.v      wbuart-insert.v 
