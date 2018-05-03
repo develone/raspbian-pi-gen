@@ -1,3 +1,65 @@
+05/03/18
+Tesing helloword.v on catboard.
+\r needed to be chg'ed to 4'hd
+
+Dan Gisselquist submitted a patch to Clifford Wolf
+
+cd icestorm
+git fetch upstream
+git merge upstream/master
+git push origin master
+commit 237280ce44f72c7b2e1ca671d5113dba34cc4fca
+Merge: 2d254d9 4f4409a
+Author: Clifford Wolf <clifford@clifford.at>
+Date:   Tue Apr 24 19:11:30 2018 +0200
+
+    Merge pull request #132 from daveshah1/bg121_docs
+
+    Add BG121 package variant and update docs
+make
+sudo make install
+
+cd ../arachne-pnr
+git fetch upstream
+git merge upstream/master
+git push origin master
+
+commit ea2d04215bc0fd6072cda244caeb6670892033b3
+Merge: 2ae5135 0612d6f
+Author: Clifford Wolf <clifford@clifford.at>
+Date:   Thu Apr 26 17:56:47 2018 +0200
+
+    Merge pull request #104 from daveshah1/fix_intosc
+
+    Fix HFOSC/LFOSC and globals conflict
+
+make
+sudo make install
+
+cd ../yosys
+git fetch upstream
+git merge upstream/master
+git push origin master
+
+commit e060375f23d56b4e330a946d5a626f0163499618
+Author: Dan Gisselquist <zipcpu@gmail.com>
+Date:   Thu May 3 12:35:01 2018 +0200
+
+    Support more character literals
+
+make
+
+Failed required editing Makefile
+ABCREV = a2d59be --> ABCREV = default
+
+sudo make install
+
+Modified helloworld to caused the error.
+
+-               message[14] = 4'hd;
++               message[14] = "\r";
+./build-Prog-cat.sh 3
+Now program works okay.
 zipcpu
 commit e03f4acf2c27a57d3ad6404c4885667a18eaae76
 Author: ZipCPU <dgisselq@ieee.org>

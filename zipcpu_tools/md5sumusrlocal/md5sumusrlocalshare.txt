@@ -1,0 +1,11 @@
+7a7a3f96d46aca8da4a29b682eaa05be  /usr/local/share/arachne-pnr/chipdb-1k.bin
+8f3bc830836fd36fe656c36e52cbb7ec  /usr/local/share/arachne-pnr/chipdb-384.bin
+618791cd1ebb960905363363c7a20a28  /usr/local/share/arachne-pnr/chipdb-5k.bin
+5a5a8e17e8ea7f2d9a4f51f29e8f907a  /usr/local/share/arachne-pnr/chipdb-8k.bin
+78cec022ffdf66c6497fda02e79f7b49  /usr/local/share/yosys/adff2dff.v
+3bd44e50042b552adf020d63c108a0a0  /usr/local/share/yosys/cells.lib
+fd48c3966795c0274168c8efa8512426  /usr/local/share/yosys/dff2ff.v
+9216f78e2db9af39f63027f587aa903b  /usr/local/share/yosys/pmux2mux.v
+94a2a756d3afba308152ee2790380272  /usr/local/share/yosys/simcells.v
+c6dfacc99dbc1e7b1ff287cded567760  /usr/local/share/yosys/simlib.v
+b688230a0a510c40b01554ea28bbae89  /usr/local/share/yosys/techmap.v
