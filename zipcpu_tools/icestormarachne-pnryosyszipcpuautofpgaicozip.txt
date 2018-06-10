@@ -105,7 +105,7 @@ samba samba-common-bin smbclient cifs-utils \
 libftdi-dev libmpc-dev libmpfr-dev verilator bc mercurial \
 libbison-dev libgmp-dev libelf-dev ncurses-dev ctags \
 default-jdk libreadline-dev xdot graphviz minicom xpdf lrzsz \
-libusb-1.0.0 exuberant-ctags gparted
+libusb-1.0.0 exuberant-ctags gparted ffmpeg
 14334 packages is increased to 1656
 
 dpkg -l | wc
