@@ -1,0 +1,93 @@
+https://hackaday.io/project/7982-cat-board
+
+Vertical HDMI Connector
+I decided to replace the SATA connectors on the original CAT Board with an 
+HDMI port. Because of its location, the normal right-angle HDMI connector 
+would be blocked by the USB ports of the Raspberry Pi. So I decided to use 
+a vertical connector.
+
+Finding vertical HDMI connectors wasn't easy. Digikey and Mouser didn't 
+have any. I finally found some on Aliexpress, but I had to piece together 
+the footprint dimensions from several sources. Obviously, I couldn't 
+really trust my footprint so I built a small prototype board using 
+several hole sizes and trace/space widths
+
+Even so, I decided not to pursue this any further. The choice of suppliers 
+for the connector was too limited and sketchy, and the assembly process 
+looked like bent pins would be a problem.
+
+Instead, I'll use the more common right-angle HDMI connector and 
+bring it off the same side of the PCB that's used by the Raspberry Pi GPIO 
+connector. To make room, I'll need to replace the through-hole GPIO socket 
+with an SMT version.
+
+In my last log, I had the SKiDL-generated netlist imported into an RPi HAT 
+template. The problem with that is PCBNEW initially places all the parts 
+pretty much any way it wants. That means you have to pick through a pile 
+of parts to find which ones go with which. As an example, I highlighted 
+(in white) the SDRAM chip and its bypass caps:
+
+
+My solution for this problem was two-fold:
+
+Since SKiDL descriptions are just programs with a natural hierarchy, I 
+modified SKiDL to pass that hierarchy to PCBNEW by embedding it into the 
+sheetpath fields of the netlists it generates.
+Then I wrote a plugin for PCBNEW that would group and arrange the parts 
+to reflect their position within that hierarchy.
+With those two items in place, the relationships between the parts 
+becomes much clearer. Here's the placement of the SDRAM and its bypass 
+caps now:
+
+After that, I was able to create an initial, rough placement for the CAT Board:
+
+I still have to design the +3.3V and +1.2V voltage regulator circuits. 
+After those are done, I can begin the detailed placing and routing.
+
+It's been a few weeks since my last log post. Since then, I've done the following:
+
+Created SKiDL modules for each of the blocks shown in my last log post, except for the power section. I still haven't 
+selected the voltage regulators for that.
+Wrote a blog post describing how to do parameterized SKiDL modules for 
+LED circuits. This is also directly applicable to the switch and pushbutton 
+sections of the CAT Board.
+Released a version update for SKiDL that includes improvements motivated 
+by the need to simplify/condense the SKiDL description of the CAT Board.
+Merged the SKiDL-generated netlist for the CAT Board with my KiCad template 
+for Rapsberry Pi HATs.
+With regard to the last item on the list, here are the components and the 
+HAT PCB boundary:
+
+It's been a few weeks since my last log post. Since then, I've done the following:
+
+Created SKiDL modules for each of the blocks shown in my last log post, 
+except for the power section. I still haven't selected the voltage 
+regulators for that.
+Wrote a blog post describing how to do parameterized SKiDL modules for 
+LED circuits. This is also directly applicable to the switch and pushbutton 
+sections of the CAT Board.
+Released a version update for SKiDL that includes improvements motivated 
+by the need to simplify/condense the SKiDL description of the CAT Board.
+Merged the SKiDL-generated netlist for the CAT Board with my KiCad 
+template for Rapsberry Pi HATs.
+With regard to the last item on the list, here are the components and the 
+HAT PCB boundary:
+06/21/18
+kicad 5 linux on Ubuntu 16.04
+sudo add-apt-repository --yes ppa:js-reynaud/ppa-kicad
+sudo apt update
+sudo apt install kicad
+deleted CAT-Board at github and forked a new version.
+git clone https://github.com/develone/KiCad-Schematic-Symbol-Libraries.git
+git clone https://github.com/develone/CAT-Board.git
+
+cd CAT-Board/ 
+git checkout skidlized
+
+cd pcb
+
+kicad CAT-skidl.pro
+
+SKIDL with Dave Vandenbout - Episode 96
+
+https://www.podcastinit.com/wp-content/uploads/Episode-96-SKIDL-with-Dave-Vandenbout.mp3?ptm_source=download&ptm_context=select-button&ptm_request=5adac32e2060&ptm_file=Episode-96-SKIDL-with-Dave-Vandenbout.mp3#
