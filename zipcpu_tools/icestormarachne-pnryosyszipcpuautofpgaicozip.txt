@@ -99,7 +99,7 @@ starting with 2 new image-2018-03-31-Raspbianultibo.zip
 Adding dependencies
 
 #!/bin/bash
-sudo apt-get install octave  vlc kicad  xchat  \
+sudo apt-get install octave  vlc kicad  hexchat  \
 ecryptfs-utils gawk gimp gtkwave iverilog clang \
 samba samba-common-bin smbclient cifs-utils \
 libftdi-dev libmpc-dev libmpfr-dev verilator bc mercurial \
